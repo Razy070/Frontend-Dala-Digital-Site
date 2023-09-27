@@ -1,0 +1,359 @@
+body {
+    background-color: black;
+    margin: 0;
+}
+
+p {
+    color: white;
+}
+
+a {
+    color: white;
+    text-decoration: none;
+}
+
+.root {
+    max-width: 1920px;
+    margin: 0 auto; /* Это выровняет элемент по центру по горизонтали */
+    position: relative; /* Это позволит вам использовать top: 0 для позиционирования по вертикали */
+    top: 0;
+}
+
+.h-video {
+    width: 100%;
+}
+
+.navbar {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 70%;
+    background-color: rgba(0, 0, 0, 0);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-left: 15%;
+    margin-right: 15%;
+    z-index: 1000; /* Устанавливаем z-index, чтобы навбар был выше остального контента */
+}
+
+.menu {
+    margin-left: 10px;
+    margin-right: 10px;
+}
+
+.language-switcher {
+    display: flex; /* Размещаем элементы внутри .language-switcher в одну линию */
+    align-items: center; /* Выравниваем элементы по вертикали по центру */
+}
+
+.language-border {
+    display: flex; /* Размещаем элементы внутри .language-border в одну линию */
+    align-items: center; /* Выравниваем элементы по вертикали по центру */
+    border-left: 2px solid #ffffff;
+    padding-left: 20px;
+}
+
+.left-vector {
+    position: absolute;
+    z-index: 1000;
+    margin-top: 40%;
+}
+
+.main-text {
+    position: absolute;
+    z-index: 1000;
+    margin-top: 0;
+    margin-left: 15%;
+}
+
+.sub-text {
+    position: absolute;
+    z-index: 1000;
+    margin-top: 42%;
+    margin-left: 15%;
+    display: flex; /* Размещаем элементы внутри .language-border в одну линию */
+    align-items: center; /* Выравниваем элементы по вертикали по центру */
+}
+
+.scroll-bar-div {
+    border-radius: 10px;
+    border: 1px solid #63605e;
+    width: 466px;
+    height: 240px;
+    backdrop-filter: blur(5px); /* Устанавливаем уровень размытия в пикселях */
+    background-color: rgba(51, 51, 51, 0.7); /* Фон с прозрачностью, чтобы сделать размытие более заметным */
+}
+
+.scroll-bar-padding {
+    padding-left: 24px;
+    padding-top: 12px;
+}
+
+.scroll-bar-center-text {
+    width: 322px;
+    height: 82px;
+    margin-left: 35px;
+}
+
+.swiper-container {
+    width: 100%;
+}
+
+.swiper-slide {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: transparent; /* Убираем цвет фона слайдов */
+    /* Установите высоту слайдов равной .scroll-bar-div */
+    height: 240px; /* Устанавливаем такую же высоту, как у .scroll-bar-div */
+}
+
+.slider {
+    width: 90%;
+    margin-left: 5%;
+    margin-right: 5%;
+    overflow: hidden;
+    position: absolute;
+    margin-top: 50%;
+}
+
+
+.arrows {
+    display: flex; /* Размещаем элементы внутри в одну линию */
+    align-items: center; /* Выравниваем элементы по вертикали по центру */
+    justify-content: center;
+    margin-top: 2%;
+}
+
+.arrow-button {
+    padding-left: 10px;
+    margin-right: 100px;
+    cursor: pointer;
+}
+
+.video-container {
+    position: relative;
+}
+
+.video-container::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 30%; /* Высота затемнения снизу (по вашему желанию) */
+    background: linear-gradient(to bottom, rgba(0, 0, 0, 0), rgba(0, 0, 0, 1)); /* Градиентное затемнение */
+    pointer-events: none; /* Псевдоэлемент не должен взаимодействовать с событиями мыши */
+}
+
+.div2 {
+    margin-top: 25%;
+    margin-left: 15%;
+    margin-right: 15%;
+}
+
+.div3 {
+    display: flex; /* Размещаем элементы внутри в одну линию */
+    align-items: center; /* Выравниваем элементы по вертикали по центру */
+    margin-left: 15%;
+    margin-right: 15%;
+}
+
+.div4 {
+    /*margin-top: 10%;*/
+}
+
+.div4-padding {
+    display: flex;
+    flex-direction: column;
+}
+
+.div4-horizontal {
+    display: flex;
+    margin-right: 0;
+    margin-left: 0;
+    width: 100%;
+    /*margin-bottom: 10%;*/
+}
+
+.card {
+    margin-left: 15%;
+    margin-right: 15%;
+    border-radius: 10px;
+    border: 1px solid #63605e;
+    width: 1399px;
+    height: 971px;
+    background-color: rgb(25, 25, 25);
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+}
+
+.sector {
+    background-color: transparent;
+    border: 1px solid #63605e;
+}
+
+/* Стили для каждого сектора (настройте размеры и стили по вашему желанию) */
+#sector1 { grid-row: 1 / span 1; grid-column: 1 / span 1; border-top-left-radius: 10px; }
+#sector2 { grid-row: 1 / span 1; grid-column: 2 / span 1; }
+#sector3 { grid-row: 1 / span 1; grid-column: 3 / span 1; border-top-right-radius: 10px; }
+#sector4 { grid-row: 2 / span 1; grid-column: 1 / span 1; height: 480px;}
+/*#sector5 { grid-row: 2 / span 2; grid-column: 2 / span 1; border: 0; height: 480px;} !* Объединяем 5 и 6 секторы *!*/
+#sector5-6 {
+    grid-row: 2 / span 2;
+    grid-column: 2 / span 1;
+    border: 0;
+    height: 480px;
+}
+#sector7 { grid-row: 3 / span 1; grid-column: 1 / span 1; border-bottom-left-radius: 10px; }
+#sector8 { grid-row: 3 / span 1; grid-column: 2 / span 1; }
+#sector9 { grid-row: 3 / span 1; grid-column: 3 / span 1; border-bottom-right-radius: 10px; }
+
+.brief-form-button {
+    background-color: #1400FF;
+    padding: 22px 30px 22px 30px;
+    margin: 13%;
+}
+
+.social-icons {
+    display: flex; /* Размещаем элементы внутри в одну линию */
+    align-items: center; /* Выравниваем элементы по вертикали по центру */
+}
+
+.icon-border {
+    background-color: rgb(25, 25, 25);
+    border: 1px solid #63605e;
+    padding: 15px;
+    margin-left: 20px;
+}
+
+/* Стили для аккордеона */
+.accordion-container {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.accordion {
+    background-color: rgb(25, 25, 25);
+    border-radius: 10px;
+}
+
+.accordion-header {
+    padding: 10px;
+    display: flex; /* Размещаем элементы внутри .language-switcher в одну линию */
+    align-items: center; /* Выравниваем элементы по вертикали по центру */
+}
+
+.accordion-toggle {
+    border: 0;
+    background: transparent;
+    cursor: pointer;
+    margin-left: auto;
+}
+
+.accordion-content {
+    display: none;
+    background-color: black;
+}
+
+.content-inner {
+    padding: 10px;
+    white-space: pre-wrap;
+}
+
+.active {
+    display: block;
+}
+
+
+.tx-white {
+    color: white;
+}
+
+.icon {
+    transition: transform 0.3s ease; /* Добавляем анимацию для свойства transform */
+}
+.icon.rotate {
+    transform: rotate(45deg); /* Поворачиваем на 45 градусов */
+}
+
+.word-wrap {
+    white-space: pre-wrap !important;
+}
+
+.bottom-line {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-right: 15%;
+    margin-left: 15%;
+    margin-bottom: 10%;
+}
+
+.bottom-links {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 30px;
+}
+
+.bottom-links-padding {
+    padding-top: 10px;
+}
+
+.bottom-lang {
+    display: flex;
+    flex-direction: column;
+}
+
+
+.video-container {
+    position: relative;
+    display: inline-block;
+
+}
+
+
+.play-button {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    background-color: white;
+    border: none;
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.play-button::before {
+    content: "";
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%) rotate(270deg); /* Поворачиваем треугольник на 270 градусов (вправо) */
+    width: 0;
+    height: 0;
+    border-left: 15px solid transparent;
+    border-right: 15px solid transparent;
+    border-top: 15px solid blue;
+}
+
+.play-button:focus {
+    outline: none;
+}
+
+.blurry-video {
+    width: 932px; /* Ширина в пикселях */
+    height: 480px; /* Высота в пикселях */
+    object-fit: cover; /* Заполняет контейнер, сохраняя пропорции и обрезая, если необходимо */
+}
