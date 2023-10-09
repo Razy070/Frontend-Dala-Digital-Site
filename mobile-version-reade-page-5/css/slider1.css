@@ -1,0 +1,21 @@
+.swiper-container {
+    width: 100%;
+}
+
+.swiper-slide {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: transparent; /* Убираем цвет фона слайдов */
+    /* Установите высоту слайдов равной .scroll-bar-div */
+    height: 240px; /* Устанавливаем такую же высоту, как у .scroll-bar-div */
+}
+
+.slider {
+    width: 90%;
+    margin-left: 5%;
+    margin-right: 5%;
+    overflow: hidden;
+    position: absolute;
+    margin-top: 50%;
+}
