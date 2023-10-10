@@ -21,15 +21,17 @@ a {
 }
 
 .video {
-    flex: 1;
-    padding: 20px;
-    text-align: right;
+
 }
 
 .h-video {
-    width: 700px;
-    height: 300px;
+    width: 100%;
+    height: auto;
+    position: fixed;
+
+
 }
+
 
 .text-head {
     width: 100%;
@@ -90,3 +92,74 @@ a {
     grid-template-rows: repeat(3, 1fr);
 }
 
+
+.toggle-input {
+    display: none;
+
+}
+
+.toggle-label {
+
+    border: 1px solid #63605e;
+    display: inline-block;
+    padding: 15px;
+    border-radius: 10px;
+    background: rgba(255, 255, 255, 0.10);
+    cursor: pointer;
+    transition: background-color 0.3s;
+    color: white;
+}
+
+.toggle-input:checked + .toggle-label {
+    background: rgba(243, 108, 28, 0.15);
+    border: 1px rgba(243.31, 108.12, 28.39, 0.50) solid;
+}
+
+
+.main {
+    display: flex;
+    margin-left: 88px;
+    margin-bottom: 15px;
+    justify-content: flex-start;
+}
+
+
+.toggle-label2 {
+    margin-left: 10px;
+    border: 1px solid #63605e;
+    display: inline-block;
+    padding: 15px;
+    border-radius: 10px;
+    background: rgba(255, 255, 255, 0.10);
+    cursor: pointer;
+    transition: background-color 0.3s;
+    color: white;
+}
+
+.toggle-input:checked + .toggle-label2 {
+    background: rgba(243, 108, 28, 0.15);
+    border: 1px rgba(243.31, 108.12, 28.39, 0.50) solid;
+}
+
+
+.input-style {
+    width: 400px;
+    padding: 15px;
+    background: rgba(255, 255, 255, 0.10);
+    color: white;
+    border-radius: 10px;
+    margin-left: 48px;
+}
+
+
+.zakaz-form-button {
+    background: #1400FF;
+    border-radius: 10px;
+    overflow: hidden;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    display: inline-flex;
+    width: 268px;
+    height: 76px;
+}
