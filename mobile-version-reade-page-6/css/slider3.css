@@ -1,0 +1,36 @@
+.swiper-img {
+    max-width: 371px;
+    max-height: 804px;
+}
+
+.swiper {
+    margin-left: 6%;
+    margin-right: 6%;
+    margin-top: 134px;
+}
+
+.swiper-wrapper {
+    margin-left: 1%;
+    margin-right: 1%;
+}
+
+.carousel-left-arrow {
+    margin-top: 30%;
+    margin-left: 5%;
+    cursor: pointer;
+}
+
+.carousel-right-arrow {
+    margin-top: 30%;
+    margin-right: 5%;
+    cursor: pointer;
+}
+
+.swiper-slide-next {
+    scale: 108%;
+    padding-top: 10px;
+}
+
+.swiper-slide {
+    padding-top: 70px;
+}
