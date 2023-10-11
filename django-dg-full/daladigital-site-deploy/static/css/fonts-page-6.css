@@ -1,0 +1,81 @@
+.dala-digital {
+    font-family: "Neue Machine", monospace;
+    font-weight: 500;
+    font-size: 30px;
+}
+
+.font-inter {
+    font-family: "Inter", sans-serif;
+    font-weight: 500;
+    font-size: 25px;
+}
+
+.phone-number {
+    font-family: "Inter", sans-serif;
+    font-weight: 600;
+    font-size: 25px;
+    padding-right: 20px;
+}
+
+.font-neue-machina {
+    font-family: "Neue Machina", sans-serif;
+    font-weight: 500;
+    font-size: 28px;
+}
+
+.font-helvetica-neue {
+    font-family: "Helvetica Neue", sans-serif;
+    font-weight: 500;
+    font-size: 78px;
+}
+
+.font-helvetica-neue-25px {
+    font-family: "Helvetica Neue", sans-serif;
+    font-weight: 500;
+    font-size: 25px;
+    white-space: nowrap;
+}
+
+.font-helvetica-neue-40px {
+    font-family: "Helvetica Neue", sans-serif;
+    font-weight: 500;
+    font-size: 40px;
+    white-space: nowrap;
+}
+
+.font-helvetica-neue-20px {
+    font-family: "Helvetica Neue", sans-serif;
+    font-weight: 500;
+    font-size: 20px;
+    white-space: nowrap;
+}
+
+.font-helvetica-neue-10px {
+    font-family: "Helvetica Neue", sans-serif;
+    font-weight: 500;
+    font-size: 10px;
+    white-space: nowrap;
+}
+
+
+.font-helvetica-neue-scrollbar-number {
+    font-family: "Helvetica Neue", sans-serif;
+    font-weight: 500;
+    font-size: 57px;
+    margin-top: 0;
+    color: #4b4846;
+}
+
+.font-helvetica-neue-scrollbar-text {
+    font-family: "Helvetica Neue", sans-serif;
+    font-weight: 500;
+    font-size: 32px;
+    color: white;
+}
+
+.bottom-phone-number {
+    font-family: "Inter", sans-serif;
+    font-weight: 600;
+    font-size: 25px;
+    padding-right: 20px;
+}

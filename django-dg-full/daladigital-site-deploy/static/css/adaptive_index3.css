@@ -1,0 +1,285 @@
+@media (max-width: 768px) {
+    .root {
+        max-width: 100%;
+        min-width: 375px;
+        margin: 0 auto; /* Это выровняет элемент по центру по горизонтали */
+        position: relative; /* Это позволит вам использовать top: 0 для позиционирования по вертикали */
+        top: 0;
+    }
+    .font-inter-mobile {
+        font-family: "Inter", sans-serif;
+        font-weight: 500;
+        font-size: 1em;
+        flex-direction: column;
+        margin-left: 3em;
+        text-align: center;
+    }
+    .navbar {
+        position: absolute;
+        width: 70%;
+        background-color: rgba(0, 0, 0, 0);
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin-left: 2em;
+        margin-right: 2em;
+        z-index: 1000; /* Устанавливаем z-index, чтобы навбар был выше остального контента */
+    }
+    #menu-desc {
+        display: none;
+    }
+    .language-border {
+        display: none;
+    }
+    .language-switcher {
+        display: flex;
+        align-items: center;
+        margin-left: 2em;
+    }
+    .dala-digital {
+        font-family: "Neue Machine", monospace;
+        font-weight: 500;
+        font-size: 1em;
+    }
+    .phone-number {
+        font-family: "Inter", sans-serif;
+        font-weight: 600;
+        font-size: 1em;
+        white-space: nowrap;
+    }
+    .navbar-flex {
+        display: block;
+        background: transparent;
+        border: 0;
+        margin-left: 3em;
+    }
+    .page3-top-img {
+        transform: scale(0.5);
+        margin-top: 39%;
+        margin-left: 0;
+        position: absolute;
+    }
+    .page3-top-label {
+        text-align: center;
+        width: 15em;
+        height: auto;
+        position: absolute;
+        top: 4em;
+        left: 4em;
+        right: 0;
+        align-content: center;
+        white-space: normal;
+    }
+    .page3-div2 {
+        background-color: #FFED8B;
+        height: 794px;
+        width: 100%;
+        top: 99%;
+        display: flex;
+        flex-direction: row;
+    }
+    .vpluse-text {
+        font-size: 1em;
+        font-family: "Helvetica Neue", sans-serif;
+        font-weight: 500;
+    }
+    .carousel-left-arrow {
+        display: none;
+    }
+    .carousel-right-arrow {
+        display: none;
+    }
+    .swiper-img {
+        transform: scale(0.7);
+
+    }
+    .swiper {
+        margin-left: 0;
+        margin-right: 0;
+        margin-top: 0;
+    }
+    .swiper-slide-next {
+        scale: 100%;
+        padding-top: 0;
+    }
+    .swiper-wrapper {
+        margin-left: 2%;
+        margin-right: 2%;
+        width: 96%;
+    }
+    .swiper-slide {
+        padding-top: 0;
+    }
+    .pg3-d3-h1 {
+        white-space: nowrap;
+        font-size: 1.5em;
+    }
+    .pg3-d3-wrapper {
+        display: flex;
+        flex-direction: column;
+    }
+    .pg3-d3-left-tx {
+        opacity: 65%;
+        padding-top: 0;
+        white-space: pre-wrap;
+        width: 300px;
+        font-size: 1em;
+    }
+    .pg3-d3-wrapper2 {
+        margin-top: 10%;
+    }
+    .pg3-d3-left {
+        width: auto;
+        height: auto;
+        text-align: left;
+    }
+    .pg3-d3-right {
+        margin-left: 0;
+        margin-top: 33px;
+    }
+    .inline-block-img {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .right-img {
+        padding-left: 0;
+        padding-top: 1em;
+    }
+    .px30 {
+        font-size: 1.5em;
+    }
+    .px25 {
+        opacity: 65%;
+        font-size: 1.5em;
+    }
+    .inline-block-desc {
+        display: flex;
+        flex-direction: column;
+    }
+    .right-desc {
+        margin-left: 0;
+    }
+    .case {
+        font-size: 1.8em;
+    }
+    .brief-tx {
+        opacity: 70%;
+        width: 300px;
+        font-size: 1em;
+    }
+    .pg3-footer-d2 {
+        display: flex; /* Размещаем элементы внутри в одну линию */
+        flex-direction: column;
+        align-items: start;
+        height: auto;
+    }
+    .brief-form-button {
+        background-color: #1400FF;
+        border: 0;
+        margin: 0;
+        border-radius: 10px;
+    }
+    .px25-brief {
+        color: white;
+        font-size: 1em;
+    }
+    .font-helvetica-neue {
+        font-family: "Helvetica Neue", sans-serif;
+        font-weight: 500;
+        font-size: 1.5em;
+    }
+    .icon-border {
+        background-color: transparent;
+        border: 1px solid #63605e;
+        padding: 1em;
+        margin-left: 0;
+        border-radius: 10px;
+    }
+    .accordion-tx {
+        font-size: 1em;
+        white-space: pre-wrap;
+    }
+    .social-icons {
+        display: flex; /* Размещаем элементы внутри в одну линию */
+        margin-left: 0;
+        margin-top: 3em;
+    }
+    .brief-icons {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin-left: 0;
+        width: 100%;
+        margin-top: 10%;
+    }
+    .bottom-phone-number {
+        font-family: "Inter", sans-serif;
+        font-weight: 600;
+        font-size: 0.9em;
+        padding-right: 20px;
+    }
+    .social-icons-bottom {
+        display: flex; /* Размещаем элементы внутри в одну линию */
+        align-items: center; /* Выравниваем элементы по вертикали по центру */
+        margin-left: 1em;
+    }
+    .bottom-icon {
+        scale: 57%;
+    }
+    .icon-border-bottom {
+        background-color: transparent;
+        border: 1px solid #63605e;
+        border-radius: 10px;
+        padding: 0.6em;
+        margin-left: 1em;
+    }
+    .icon {
+        transform: scale(0.5);
+        transition: transform 0.3s ease; /* Добавляем анимацию для свойства transform */
+    }
+    .icon.rotate {
+        transform: rotate(45deg) scale(0.5); /* Поворачиваем на 45 градусов */
+    }
+    .mobile-tx {
+        font-size: 0.7em;
+    }
+    .bottom-line {
+        display: none;
+    }
+    .footer {
+        display: none;
+    }
+    .footer-mobile {
+        margin-top: 2em;
+        display: flex;
+        flex-direction: column;
+        margin-left: 1em;
+    }
+    .inline-block-mobile {
+        display: flex;
+    }
+    .footer-div {
+        margin-left: 2em;
+        margin-bottom: 2em;
+    }
+    .bottom-links {
+        display: flex;
+        flex-direction: column;
+        margin-bottom: 1.8em;
+    }
+    .language-switcher-bottom {
+        display: flex; /* Размещаем элементы внутри .language-switcher в одну линию */
+        align-items: center; /* Выравниваем элементы по вертикали по центру */
+    }
+    #menu {
+
+    }
+    .icon-border-right {
+        background-color: transparent;
+        border: 1px solid #63605e;
+        padding: 17px;
+        margin-left: 20px;
+        border-radius: 10px;
+    }
+}

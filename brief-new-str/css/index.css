@@ -162,3 +162,16 @@ a {
     height: 76px;
     margin-left: 30px;
 }
+
+
+.main-div {
+    width: 960px;
+    height: auto
+}
+
+
+.first-div {
+    width: 100%;
+    height: auto;
+    display: flex
+}

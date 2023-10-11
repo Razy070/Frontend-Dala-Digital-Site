@@ -1,0 +1,348 @@
+{% load static %}
+{% load i18n %}
+<!doctype html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="{% static 'css/index.css' %}">
+    <link rel="stylesheet" href="{% static 'css/index_brief.css' %}">
+    <link rel="stylesheet" href="{% static 'css/fonts.css' %}">
+    <link rel="stylesheet" href="{% static 'css/http_unpkg.com_swiper_swiper-bundle.css' %}">
+    <link rel="stylesheet" href="{% static 'css/slider3.css' %}">
+    <link rel="stylesheet" href="{% static 'css/adaptive_index3.css' %}">
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Dala Digital</title>
+</head>
+<body>
+<div class="root">
+    <div style="background-color: #FFED8B">
+        <img class="page3-top-img" src="{% static 'images/image39.svg' %}" alt="">
+        <div class="navbar">
+            <div>
+                <a href="{% url 'homepage' %}" class="dala-digital">Dala<br>Digital</a>
+            </div>
+            <div class="font-inter" id="menu-desc">
+                <a class="menu" href="{% url 'portfolio' %}">{% trans 'Портфолио' %}</a>
+                <a class="menu" href="{% url 'services' %}">{% trans 'Услуги' %}</a>
+                <a class="menu" href="{% url 'articles' %}">{% trans 'Статьи' %}</a>
+            </div>
+            <div class="font-inter-mobile" id="menu">
+                <a href="{% url 'portfolio' %}" style="margin-top: 0.5em">{% trans 'Портфолио' %}</a>
+                <a href="{% url 'services' %}" style="margin-top: 0.5em">{% trans 'Услуги' %}</a>
+                <a href="{% url 'articles' %}" style="margin-top: 0.5em">{% trans 'Статьи' %}</a>
+                <a href="{% url 'set_language_en' %}" style="margin-top: 0.5em">en</a>
+                <a href="{% url 'set_language_ru' %}" style="color: #ff7602; margin-top: 0.5em">ru</a>
+            </div>
+            <div class="language-switcher" id="lang-switch">
+                <p class="phone-number">+7 707 997 7729</p>
+                <div class="language-border">
+                    <a class="font-neue-machina" href="{% url 'set_language_en' %}">en</a>
+                    <a class="font-neue-machina" href="{% url 'set_language_ru' %}" style="color: #ff7602; padding-left: 15px">ru</a>
+                </div>
+            </div>
+            <button class="navbar-flex">
+                <img src="{% static 'images/strokes.svg' %}" alt="">
+            </button>
+        </div>
+        <div class="center-content page3-top-label" id="top-label">
+            <p class="vpluse-text">{% trans 'Создание приложения для программы лояльности ВПЛЮСЕ' %}</p>
+        </div>
+        <div>
+            <img class="page3-top" src="{% static 'images/frame-top-3.svg' %}" alt="">
+        </div>
+
+        <div class="page3-div2" id="div2">
+                <div class="button-prev carousel-left-arrow" id="cs">
+                <img src="{% static 'images/Vector 198.svg' %}" alt="">
+            </div>
+            <div class="swiper" >
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide">
+                        <img class="swiper-img" src="{% static 'images/phone1.svg' %}" alt="">
+                    </div>
+                    <div class="swiper-slide">
+                        <img class="swiper-img" src="{% static 'images/phone2.svg' %}" alt="">
+                    </div>
+                    <div class="swiper-slide">
+                        <img class="swiper-img" src="{% static 'images/phone3.png' %}" alt="">
+                    </div>
+                    <div class="swiper-slide">
+                        <img class="swiper-img" src="{% static 'images/phone1.svg' %}" alt="">
+                    </div>
+                    <div class="swiper-slide">
+                        <img class="swiper-img" src="{% static 'images/phone2.svg' %}" alt="">
+                    </div>
+                    <div class="swiper-slide">
+                        <img class="swiper-img" src="{% static 'images/phone3.png' %}" alt="">
+                    </div>
+                </div>
+            </div>
+            <div class="button-next carousel-right-arrow">
+                <img src="{% static 'images/Vector 197.svg' %}" alt="">
+            </div>
+        </div>
+    </div>
+
+    <div class="page3-div3">
+        <div class="pg3-d3-container">
+            <div>
+                <p class="font-helvetica-neue pg3-d3-h1">{% trans 'О проекте' %}</p>
+            </div>
+            <div class="pg3-d3-wrapper">
+                <div class="pg3-d3-left font-helvetica-neue-25px pg3-d3-left-tx" style="word-wrap: break-word; overflow-wrap: break-word; white-space: normal;">{% trans 'Это программа лояльности, которая помогает каждому участнику оставаться всегда Вплюсе. Это возможность покупать выгодно и получать возврат средств за покупку своих любимых продуктов.' %}</div>
+                <div class="pg3-d3-right">
+                    <div class="inline-block-img">
+                        <a href="#">
+                            <img src="{% static 'images/image 40.svg' %}" alt="">
+                        </a>
+                        <a href="#">
+                            <img class="right-img" src="{% static 'images/image 41.svg' %}" alt="">
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="pg3-d3-wrapper2">
+                <div class="inline-block-desc">
+                    <div>
+                        <p class="font-helvetica-neue px30">{% trans 'Сроки:' %}</p>
+                        <p class="font-helvetica-neue-25px px25">{% trans '3 месяца' %}</p>
+                    </div>
+                    <div class="right-desc">
+                        <p class="font-helvetica-neue px30">{% trans 'Услуги:' %}</p>
+                        <p class="font-helvetica-neue-25px px25">{% trans 'UX / UI дизайн' %}</p>
+                        <p class="font-helvetica-neue-25px px25" style="word-wrap: break-word; overflow-wrap: break-word; white-space: normal;">{% trans 'Разработка мобильного приложения' %}</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="pg3-footer">
+        <div class="pg3-footer-d1">
+            <p class="font-helvetica-neue">{% trans 'Есть похожий кейс?' %}</p>
+            <div class="pg3-footer-d2">
+                <p class="font-helvetica-neue-25px brief-tx" style="word-wrap: break-word; overflow-wrap: break-word; white-space: normal;">{% trans 'Заполните бриф с описанием желаемого проекта. Мы сможем сразу дать ориентировочную оценку проекта по стоимости и срокам, если вы кратко опишете его основную идею и функции.' %}</p>
+                <div class="brief-icons">
+                    <div class="brief-form-button">
+                        <p class="font-helvetica-neue-25px px25-brief">{% trans 'Заполнить бриф' %}</p>
+                    </div>
+                    <div class="social-icons">
+                        <div class="icon-border">
+                            <a href="#"><img src="{% static 'images/whatsapp (2).png' %}" alt="whatsapp"></a>
+                        </div>
+                        <div class="icon-border-right">
+                            <a href="#"><img class="right-icon" src="{% static 'images/telegram.png' %}" alt="telegram"></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="main-brief" id="brief">
+     <div class="left-fixed-div">
+         <div class="column-text-head">
+             <div class="text-head">
+                 <p class="font-helvetica-neue-78px">{% trans 'Заказ Дизайна' %}</p>
+             </div>
+             <div class="font-helvetica-neue-25px-tx">{% trans 'Каждую задачу мы решаем тщательно<br/>с креативным подходом.<br/><br/>Для начала сотрудничества необходимо обменяться информацией о вашем проекте и предоставить контактные данные. Мы свяжемся с вами для обсуждения всех деталей.' %}</div>
+         </div>
+         <div class="new-pr"><p class="font-helvetica-neue-25px">{% trans 'Новый проект' %}</p></div>
+         <div class="main-br">
+             <input type="checkbox" id="toggle1" class="toggle-input-br">
+             <label for="toggle1" class="toggle-label-br font-helvetica-neue-text-18px">{% trans 'Лендинг' %}</label>
+
+             <label for="toggle2"></label><input type="checkbox" id="toggle2" class="toggle-input-br">
+             <label for="toggle2" class="toggle-label2-br font-helvetica-neue-text-18px">{% trans 'Интернет-магазин' %}</label>
+
+             <label for="toggle3"></label><input type="checkbox" id="toggle3" class="toggle-input-br">
+             <label for="toggle3" class="toggle-label2-br font-helvetica-neue-text-18px">{% trans 'Веб-приложение' %}</label>
+         </div>
+         <div class="main-br">
+             <label for="toggle4"></label><input type="checkbox" id="toggle4" class="toggle-input-br">
+             <label for="toggle4" class="toggle-label-br font-helvetica-neue-text-18px">{% trans 'Мобильное приложение' %}</label>
+
+             <label for="toggle5"></label><input type="checkbox" id="toggle5" class="toggle-input-br">
+             <label for="toggle5" class="toggle-label2-br font-helvetica-neue-text-18px">{% trans 'UX / UI дизайн' %}</label>
+
+             <label for="toggle6"></label><input type="checkbox" id="toggle6" class="toggle-input-br">
+             <label for="toggle6" class="toggle-label2-br font-helvetica-neue-text-18px">{% trans 'Брендинг, создание лого' %}</label>
+         </div>
+         <div class="main-br">
+             <label for="toggle7"></label><label for="toggle7"></label><input type="checkbox" id="toggle7" class="toggle-input-br">
+             <label for="toggle7" class="toggle-label-br font-helvetica-neue-text-18px">{% trans 'Motion-дизайн' %}</label>
+
+             <label for="toggle8"></label><label for="toggle8"></label><input type="checkbox" id="toggle8" class="toggle-input-br">
+             <label for="toggle8" class="toggle-label2-br font-helvetica-neue-text-18px">{% trans 'SMM' %}</label>
+
+             <label for="toggle9"></label><label for="toggle9"></label><input type="checkbox" id="toggle9" class="toggle-input-br">
+             <label for="toggle9" class="toggle-label2-br font-helvetica-neue-text-18px">{% trans 'Таргетированная, Контекстная реклама' %}</label>
+         </div>
+     <div>
+         <div class="new-pr"><p class="font-helvetica-neue-25px">{% trans 'Новый проект' %}</p></div>
+         <label for="name1">{% trans 'Имя:' %}</label>
+         <input type="text" id="name1" placeholder="Название компании" class="input-style font-helvetica-neue-text-18px">
+     </div>
+         <div>
+             <div class="new-pr"><p class="font-helvetica-neue-25px">{% trans 'Описание проекта и примерный бюджет' %}</p></div>
+             <label for="name2">{% trans 'Имя:' %}</label>
+             <input type="text" id="name2" placeholder="Например: Сайты конкурентов" class="input-style font-helvetica-neue-text-18px">
+         </div>
+         <div>
+             <div class="new-pr"><p class="font-helvetica-neue-25px">{% trans 'Телефон' %}</p></div>
+             <label for="name3">{% trans 'Имя:' %}</label>
+             <input type="text" id="name3" placeholder="Или мессенджер" class="input-style font-helvetica-neue-text-18px">
+         </div>
+         <div>
+             <div class="new-pr"><p class="font-helvetica-neue-25px">{% trans 'Имя' %}</p></div>
+             <label for="name4">{% trans 'Имя:' %}</label>
+             <input type="text" id="name4" placeholder="Как к вам обращаться?" class="input-style font-helvetica-neue-text-18px">
+             <div style="margin-top: 50px; margin-left: 50px">
+                 <p class="zakaz-form-button font-helvetica-neue-25px">{% trans 'Отправить заявку' %}</p>
+             </div>
+         </div>
+     </div>
+    <div>
+        <video class="h-video-brief" loop muted autoplay src="{% static 'video/pexels_videos_2450251 (2160p).mp4' %}"></video>
+    </div>
+</div>
+        <div class="pg3-footer-d1" style="margin-top: 15%">
+            <p class="font-helvetica-neue">{% trans 'Частые вопросы' %}</p>
+        </div>
+        <div class="accordion-container" style="margin-right: 10%; margin-left: 10%; margin-bottom: 10%">
+            <div class="accordion">
+                <div class="accordion-header">
+                    <p class="font-helvetica-neue-25px accordion-tx" >{% trans 'Занимаетесь ли вы поддержкой проекта? Сколько это стоит?' %}</p>
+                    <button class="accordion-toggle">
+                        <img class="icon" src="{% static 'images/vector-194-2.svg' %}" alt="">
+                    </button>
+                </div>
+                <div class="accordion-content">
+                    <div class="content-inner tx-white font-helvetica-neue-25px">
+                        <p class="word-wrap mobile-tx">{% trans 'Мы предоставляем гарантию на свои работы, по истечении ее срока мы можем заключить с вами договор на техническую поддержку. Он будет включать в себя определенное количество часов в месяц по установленной абонентской плате (здесь мы с вами обсудим все индивидуально). В рамках этих часов можно поддерживать актуальность и стабильность работы приложения или проводить доработки по функционалу.' %}</p>
+                    </div>
+                </div>
+            </div>
+            <div class="accordion">
+                <div class="accordion-header">
+                    <p class="font-helvetica-neue-25px accordion-tx">{% trans 'Беретесь ли вы за доработку приложений?' %}</p>
+                    <button class="accordion-toggle">
+                        <img class="icon" src="{% static 'images/vector-194-2.svg' %}" alt="">
+                    </button>
+                </div>
+                <div class="accordion-content">
+                    <div class="content-inner tx-white font-helvetica-neue-25px">
+                        <p class="word-wrap mobile-tx">{% trans 'Мы берем проекты на доработку. Перед ознакомлением с исходным кодом проекта подписываем NDA. Далее осуществляем ревью приложений и даем рекомендации по их улучшению. Формат работы может быть как Time & Materials (оплата за фактически затраченное на задачи время), так и Retainer (стоимость работы команды или отдельных специалистов за месяц) или FixPrice (зафиксированная стоимость всего проекта).' %}</p>
+                    </div>
+                </div>
+            </div>
+            <div class="accordion">
+                <div class="accordion-header">
+                    <p class="font-helvetica-neue-25px accordion-tx">{% trans 'У вас нет проектов, похожих на мой, а вы точно справитесь?' %}</p>
+                    <button class="accordion-toggle">
+                        <img class="icon" src="{% static 'images/vector-194-2.svg' %}" alt="">
+                    </button>
+                </div>
+                <div class="accordion-content">
+                    <div class="content-inner tx-white font-helvetica-neue-25px">
+                        <p class="word-wrap mobile-tx">{% trans 'Если вы не увидели в нашем портфолио проекта, аналогичного вашему, возможно, просто с подобной идеей к нам еще не обращались, либо мы не можем публиковать кейс на сайте ввиду ограничений по конфиденциальности. Однако уникальных приложений на рынке существует очень много, и они обычно обладают стандартным функционалом: авторизация, подписки, каталог, личный кабинет, навигация, платежные системы и др. Наверняка необходимые вам элементы уже реализованы нашей студией в других проектах. Мы подробно обсудим с вами детали вашей идеи и предложим варианты реализации, исходя из накопленной продуктовой экспертизы.' %}</p>
+                    </div>
+                </div>
+            </div>
+            <div class="accordion">
+                <div class="accordion-header">
+                    <p class="font-helvetica-neue-25px accordion-tx">{% trans 'Передаете ли вы права на приложение?' %}</p>
+                    <button class="accordion-toggle">
+                        <img class="icon" src="{% static 'images/vector-194-2.svg' %}" alt="">
+                    </button>
+                </div>
+                <div class="accordion-content">
+                    <div class="content-inner tx-white font-helvetica-neue-25px">
+                        <p class="word-wrap mobile-tx">{% trans 'Да, мы прописываем в договоре информацию о том, что заказчик получает все права свой продукт, а с нашей стороны они наоборот отчуждаются.' %}</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="bottom-line">
+            <img src="{% static 'images/vector-192-1.svg' %}" alt="">
+        </div>
+        <div class="footer">
+            <div>
+                <a href="{% url 'homepage' %}" class="font-neue-machina" style="font-size: 44px; color: #1400FF;">Dala<br>Digital</a>
+                <p class="font-inter" style="font-size: 20px; opacity: 70%; white-space: normal; width: 160px;">{% trans 'Студия создания цифровых продуктов полного цикла' %}</p>
+            </div>
+            <div>
+                <div class="bottom-links">
+                    <a class="font-inter" href="{% url 'portfolio' %}">{% trans 'Портфолио' %}</a>
+                    <a class="font-inter bottom-links-padding" href="{% url 'services' %}">{% trans 'Услуги' %}</a>
+                    <a class="font-inter bottom-links-padding" href="#">{% trans 'Контакты' %}</a>
+                </div>
+            </div>
+            <div>
+                <p class="font-inter">{% trans 'Написать нам:' %}</p>
+                <div class="social-icons">
+                    <div class="icon-border">
+                        <a href="#"><img src="{% static 'images/whatsapp (2).png' %}" alt=""></a>
+                    </div>
+                    <div class="icon-border" style="padding: 17px">
+                        <a href="#"><img src="{% static 'images/telegram.png' %}" alt=""></a>
+                    </div>
+                </div>
+            </div>
+            <div class="bottom-lang">
+                <div class="language-switcher">
+                    <a class="font-neue-machina" href="{% url 'set_language_en' %}" style="margin-right: 20px;">en</a>
+                    <a class="font-neue-machina" href="{% url 'set_language_ru' %}" style="color: #1400FF;">ru</a>
+                </div>
+                <div>
+                    <p class="bottom-phone-number">+7 707 997 7729</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="footer-mobile">
+        <div class="inline-block-mobile footer-div">
+            <div>
+                <div class="bottom-links">
+                    <a class="font-inter-flex" style="font-size: 0.9em" href="{% url 'portfolio' %}">{% trans 'Портфолио' %}</a>
+                    <a class="font-inter-flex bottom-links-padding" style="font-size: 0.9em" href="{% url 'services' %}">{% trans 'Услуги' %}</a>
+                    <a class="font-inter-flex bottom-links-padding" style="font-size: 0.9em" href="#">{% trans 'Контакты' %}</a>
+                </div>
+            </div>
+            <div class="bottom-lang" style="margin-left: 6em;">
+                <div class="language-switcher-bottom">
+                    <a class="font-neue-machina" href="{% url 'set_language_en' %}" style="margin-right: 20px; font-size: 1em;">en</a>
+                    <a class="font-neue-machina" href="{% url 'set_language_ru' %}" style="color: #1400FF; font-size: 1em;">ru</a>
+                </div>
+                <div>
+                    <p class="bottom-phone-number">+7 707 997 7729</p>
+                </div>
+            </div>
+        </div>
+        <div class="inline-block-mobile footer-div">
+            <div>
+                <a href="{% url 'homepage' %}" class="font-neue-machina" style="font-size: 1.5em; color: #1400FF;">Dala<br>Digital</a>
+                <p class="font-inter-flex" style="font-size: 0.8em; opacity: 70%; white-space: normal; width: 10em">{% trans 'Студия создания цифровых продуктов полного цикла' %}</p>
+            </div>
+            <div style="margin-left: 0; margin-top: 1em;">
+                <p class="font-inter-flex" style="font-size: 0.9em; margin-left: 2.2em;">{% trans 'Написать нам:' %}</p>
+                <div class="social-icons-bottom" style="margin-top: 2em;">
+                    <div class="icon-border-bottom " style="padding: 0.2em;">
+                        <a href="#"><img class="bottom-icon" src="{% static 'images/whatsapp (2).png' %}" alt=""></a>
+                    </div>
+                    <div class="icon-border-bottom " style="padding: 0.3em">
+                        <a href="#"><img class="bottom-icon" src="{% static 'images/telegram.png' %}" alt=""></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<script src="{% static 'scripts/carousel.js' %}"></script>
+<script src="{% static 'scripts/accordion.js' %}"></script>
+<script src="{% static 'scripts/http_unpkg.com_swiper_swiper-bundle.js' %}"></script>
+<script src="{% static 'scripts/menu3.js' %}"></script>
+<script src="{% static 'scripts/briefCancel.js' %}"></script>
+</body>
+</html>

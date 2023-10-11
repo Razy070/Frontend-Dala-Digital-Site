@@ -1,0 +1,321 @@
+{% load static %}
+<!doctype html>
+<html lang="ru">
+<head>
+    <link rel="stylesheet" href="{% static 'css/index-2-ready.css' %}">
+    <link rel="stylesheet" href="{% static 'css/fonts-page-2.css' %}">
+    <link rel="stylesheet" href="{% static 'css/adaptive_index-page-2.css' %}">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Dala Digital</title>
+</head>
+<body>
+<div class="root">
+    <div class="navbar">
+        <div>
+            <p class="dala-digital">Dala<br>Digital</p>
+        </div>
+        <div class="menu-mobile-container" id="menu" style="display: none;">
+            <a class="menu-mobile font-inter" href="#" style="font-size: 0.9em">Портфолио</a>
+            <a class="menu-mobile font-inter" href="#" style="font-size: 0.9em">Услуги</a>
+            <a class="menu-mobile font-inter" href="#" style="font-size: 0.9em">Контакты</a>
+            <a class="menu-mobile font-inter" href="#" style="font-size: 0.9em">en</a>
+            <a class="menu-mobile font-inter" href="#" style="font-size: 0.9em; color: #ff7602;">ru</a>
+        </div>
+        <div class="font-inter">
+            <a class="menu" href="#">Портфолио</a>
+            <a class="menu" href="#">Услуги</a>
+            <a class="menu" href="#">Контакты</a>
+        </div>
+        <div class="language-switcher" id="lang-switch">
+            <p class="phone-number" id="phone-number">+7 707 997 7729</p>
+            <div class="language-border">
+                <a class="font-neue-machina" href="#">en</a>
+                <a class="font-neue-machina" href="#" style="color: #ff7602; padding-left: 15px">ru</a>
+            </div>
+        </div>
+        <button class="navbar-flex">
+            <img src="{% static 'images/strokes.svg' %}" alt="">
+        </button>
+        <img class="left-vector" src="{% static 'images/vector-189.svg' %}" alt="left-vector">
+    </div>
+    <div class="main-text">
+        <p class="font-helvetica-neue">Портфолио</p>
+    </div>
+    <div class="sub-text">
+        <p class="font-helvetica-neue-25px">От идеи до первых пользователей</p>
+        <img id="adaptive-image-mobile" class="header-bottom-vector" src="{% static 'images/vector190(small).svg' %}" alt="bottom-vector">
+        <img id="adaptive-image" class="header-bottom-vector" src="{% static 'images/vector-190.svg' %}" alt="bottom-vector"></div>
+    <div class="video-container video-wrapper">
+        <video class="h-video" loop muted autoplay src="{% static 'video/pexels-tea-oebel-6804109 (Original).mp4' %}"></video>
+    </div>
+    <div class="div4">
+        <div class="div4-padding">
+            <div class="inline-block">
+                <div id="adaptive-image1" class="adaptive-image frame1">
+                    <p class="word-wrap frame1-p">Создание приложения для программы лояльности ВПЛЮСЕ</p>
+                </div>
+                <div id="adaptive-image2" class="adaptive-image frame2">
+                    <p class="word-wrap frame2-p">Приложения для аренды спортивных площадок в Астане - OYNA</p>
+                </div>
+            </div>
+            <div class="inline-block">
+                <div id="adaptive-image3" class="adaptive-image frame3">
+                    <p class="word-wrap frame3-p" >Мобильное dating приложение Hangout</p>
+                </div>
+                <div id="adaptive-image4" class="adaptive-image frame4">
+                    <p class="word-wrap frame4-p">Мобильное приложение для помощи прибывания в Мекке и совершения Хаджа и Умры</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="div4">
+        <div class="div4-padding">
+            <div class="inline-block">
+                <div id="adaptive-image5" class="adaptive-image frame5">
+                    <p class="word-wrap frame5-p">Разработка сайта и дизайна для архитектурного бюро Проект Интех Плюс</p>
+                </div>
+                <div id="adaptive-image6" class="adaptive-image frame6">
+                    <p class="word-wrap frame6-p">Лэндинг для привлечения водителей в такси APARU</p>
+                </div>
+            </div>
+            <div class="inline-block">
+                <div id="adaptive-image7" class="adaptive-image frame7">
+                    <p class="word-wrap frame7-p">Разработка сайта и логотипа для строительной компании в Грузии - HM Group</p>
+                </div>
+                <div id="adaptive-image8" class="adaptive-image frame8">
+                    <p class="word-wrap frame8-p">Создание сайта для центра выкупа недвижимости - NVSbuy</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="div4">
+        <div class="div4-horizontal">
+            <div class="video-container2">
+                <video id="video2" src="{% static 'video/Рекламный ролик для казахстанского сервиса такси APARU.mp4' %}" class="left-video"></video>
+                <button class="play-button" onclick="toggleVideo('video2')"></button>
+            </div>
+            <div class="video-container2">
+                <video id="video1" src="{% static 'video/Рекламный пост для ЖК AUSTRIA. Базис А.mp4' %}" class="right-video"></video>
+                <button class="play-button" onclick="toggleVideo('video1')"></button>
+            </div>
+        </div>
+    </div>
+    <div class="div4">
+        <div class="div4-padding">
+            <div class="inline-block">
+                <div id="adaptive-image9" class="adaptive-image frame9">
+                    <p class="word-wrap frame9-p">Создание сайта для сервиса по ремонту бытовой техники</p>
+                </div>
+                <div id="adaptive-image10" class="adaptive-image frame10">
+                    <p class="word-wrap frame10-p">Создание сайта и дизайна для магазина<br>дверей - AvroraDoors</p>
+                </div>
+            </div>
+                </div>
+            </div>
+    <div class="div4">
+        <div class="div4-horizontal">
+            <div class="video-container2">
+                <video poster="{% static 'images/screenshot-2023-09-23-at-12-36-1.png' %}" id="video3" class="center-video" src="{% static 'video/Бір қолданбаны пайдаланыңыз - көптеген шешімдер алыңыз!.mp4' %}"></video>
+                <button class="play-button" onclick="toggleVideo('video3')"></button>
+            </div>
+        </div>
+    </div>
+<div class="div4">
+    <div class="div4-padding">
+        <div class="inline-block">
+            <div id="adaptive-image11" class="adaptive-image frame11">
+                <p class="word-wrap frame11-p">Создание сайта и дизайна для адвокатского бюро - ПАРТНЕР</p>
+            </div>
+            <div id="adaptive-image12" class="adaptive-image frame12">
+                <p class="word-wrap frame12-p">Создание дизайна и сайта<br>для полиграфии - AstanaPack</p>
+            </div>
+        </div>
+    </div>
+</div>
+    <div class="div3" style="margin-top: 10%;">
+        <p class="font-helvetica-neue" style="color: white; white-space: nowrap;">С чего начать?</p>
+        <img class="footer-vector" src="{% static 'images/vector-191-2.svg' %}" alt="bottom-vector" style="padding-left: 15%">
+    </div>
+    <div class="div3-footer">
+        <p class="font-helvetica-neue-25px-flex word-wrap" style="opacity: 70%;">Заполните бриф с описанием желаемого проекта. Мы сможем сразу дать ориентировочную оценку проекта по стоимости и срокам, если вы кратко опишете его основную идею и функции.</p>
+        <div class="brief-form-button">
+            <a href="#" class="font-helvetica-neue-25px">Заполнить бриф</a>
+        </div>
+        <div class="social-icons">
+            <div class="icon-border">
+                <a href="#"><img src="{% static 'images/whatsapp (2).png' %}" alt="whatsapp"></a>
+            </div>
+            <div class="icon-border" style="padding: 17px">
+                <a href="#"><img src="{% static 'images/telegram.png' %}" alt="telegram"></a>
+            </div>
+        </div>
+    </div>
+    <div class="div3-footer-mobile">
+        <p class="font-helvetica-neue-25px-flex word-wrap" style="opacity: 70%; margin-top: 5%; margin-bottom: 15%">Заполните бриф с описанием желаемого проекта. Мы сможем сразу дать ориентировочную оценку проекта по стоимости и срокам, если вы кратко опишете его основную идею и функции.</p>
+        <div class="inline-block-mobile">
+            <div class="brief-form-button">
+                <a href="#" class="font-helvetica-neue-25px-flex" style="width: 20px; padding: 0;">Заполнить бриф</a>
+            </div>
+            <div class="social-icons">
+                <div class="icon-border" style="padding: 0.2em;">
+                    <a href="#"><img style="scale: 57%" src="{% static 'images/whatsapp (2).png' %}" alt="whatsapp"></a>
+                </div>
+                <div class="icon-border" style="padding: 0.3em">
+                    <a href="#"><img style="scale: 57%" src="{% static 'images/telegram.png' %}" alt="telegram"></a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="div2" style="margin-top: 0">
+        <p class="font-helvetica-neue">Частые вопросы</p>
+    </div>
+    <div class="accordion-container" style="margin-right: 15%; margin-left: 15%; margin-bottom: 10%">
+        <div class="accordion">
+            <div class="accordion-header">
+                <p class="font-helvetica-neue-25px-flex word-wrap">Занимаетесь ли вы поддержкой проекта? Сколько это стоит?</p>
+                <button class="accordion-toggle">
+                    <img class="icon" src="{% static 'images/vector-194-2.svg' %}" alt="">
+                </button>
+            </div>
+            <div class="accordion-content">
+                <div class="content-inner tx-white font-helvetica-neue-25px-flex">
+                    <p class="word-wrap">Мы предоставляем гарантию на свои работы, по истечении ее срока мы можем заключить с вами договор на техническую поддержку. Он будет включать в себя определенное количество часов в месяц по установленной абонентской плате (здесь мы с вами обсудим все индивидуально). В рамках этих часов можно поддерживать актуальность и стабильность работы приложения или проводить доработки по функционалу.</p>
+                </div>
+            </div>
+        </div>
+        <div class="accordion">
+            <div class="accordion-header">
+                <p class="font-helvetica-neue-25px-flex word-wrap">Беретесь ли вы за доработку приложений?</p>
+                <button class="accordion-toggle">
+                    <img class="icon" src="{% static 'images/vector-194-2.svg' %}" alt="">
+                </button>
+            </div>
+            <div class="accordion-content">
+                <div class="content-inner tx-white font-helvetica-neue-25px-flex">
+                    <p class="word-wrap">Мы берем проекты на доработку. Перед ознакомлением с исходным кодом проекта подписываем NDA. Далее осуществляем ревью приложений и даем рекомендации по их улучшению. Формат работы может быть как Time & Materials (оплата за фактически затраченное на задачи время), так и Retainer (стоимость работы команды или отдельных специалистов за месяц) или FixPrice (зафиксированная стоимость всего проекта).</p>
+                </div>
+            </div>
+        </div>
+        <div class="accordion">
+            <div class="accordion-header">
+                <p class="font-helvetica-neue-25px-flex word-wrap">У вас нет проектов, похожих на мой, а вы точно справитесь?</p>
+                <button class="accordion-toggle">
+                    <img class="icon" src="{% static 'images/vector-194-2.svg' %}" alt="">
+                </button>
+            </div>
+            <div class="accordion-content">
+                <div class="content-inner tx-white font-helvetica-neue-25px-flex">
+                    <p class="word-wrap">Если вы не увидели в нашем портфолио проекта, аналогичного вашему, возможно, просто с подобной идеей к нам еще не обращались, либо мы не можем публиковать кейс на сайте ввиду ограничений по конфиденциальности. Однако уникальных приложений на рынке существует очень много, и они обычно обладают стандартным функционалом: авторизация, подписки, каталог, личный кабинет, навигация, платежные системы и др. Наверняка необходимые вам элементы уже реализованы нашей студией в других проектах. Мы подробно обсудим с вами детали вашей идеи и предложим варианты реализации, исходя из накопленной продуктовой экспертизы.</p>
+                </div>
+            </div>
+        </div>
+        <div class="accordion">
+            <div class="accordion-header">
+                <p class="font-helvetica-neue-25px-flex word-wrap">Передаете ли вы права на приложение?</p>
+                <button class="accordion-toggle">
+                    <img class="icon" src="{% static 'images/vector-194-2.svg' %}" alt="">
+                </button>
+            </div>
+            <div class="accordion-content">
+                <div class="content-inner tx-white font-helvetica-neue-25px-flex">
+                    <p class="word-wrap">Да, мы прописываем в договоре информацию о том, что заказчик получает все права свой продукт, а с нашей стороны они наоборот отчуждаются.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="bottom-line">
+        <img class="bottom-vector-footer" src="{% static 'images/vector-192-1.svg' %}" alt="">
+    </div>
+    <div class="footer">
+        <div>
+            <p class="font-neue-machina" style="font-size: 44px; color: #1400FF;">Dala<br>Digital</p>
+            <p class="font-inter" style="font-size: 20px; opacity: 70%;">Студия создания цифровых<br> продуктов полного цикла</p>
+        </div>
+        <div>
+            <div class="bottom-links">
+                <a class="font-inter" href="#">Портфолио</a>
+                <a class="font-inter bottom-links-padding" href="#">Услуги</a>
+                <a class="font-inter bottom-links-padding" href="#">Контакты</a>
+            </div>
+        </div>
+        <div>
+            <p class="font-inter">
+                Написать нам:
+            </p>
+            <div class="social-icons">
+                <div class="icon-border">
+                    <a href="#"><img src="{% static 'images/whatsapp (2).png' %}" alt=""></a>
+                </div>
+                <div class="icon-border" style="padding: 17px">
+                    <a href="#"><img src="{% static 'images/telegram.png' %}" alt=""></a>
+                </div>
+            </div>
+        </div>
+        <div class="bottom-lang">
+            <div class="language-switcher">
+                <a class="font-neue-machina" href="#" style="margin-right: 20px;">en</a>
+                <a class="font-neue-machina" href="#" style="color: #1400FF;">ru</a>
+            </div>
+            <div>
+                <p class="bottom-phone-number">
+                    +7 707 997 7729
+                </p>
+            </div>
+        </div>
+    </div>
+    <div class="footer-mobile">
+
+        <div class="inline-block-mobile footer-div">
+            <div>
+                <div class="bottom-links">
+                    <a class="font-inter-flex" style="font-size: 0.9em" href="#">Портфолио</a>
+                    <a class="font-inter-flex bottom-links-padding" style="font-size: 0.9em" href="#">Услуги</a>
+                    <a class="font-inter-flex bottom-links-padding" style="font-size: 0.9em" href="#">Контакты</a>
+                </div>
+            </div>
+            <div class="bottom-lang" style="margin-left: 6em;">
+                <div class="language-switcher-bottom">
+                    <a class="font-neue-machina" href="#" style="margin-right: 20px; font-size: 1em;">en</a>
+                    <a class="font-neue-machina" href="#" style="color: #1400FF; font-size: 1em;">ru</a>
+                </div>
+                <div>
+                    <p class="bottom-phone-number">
+                        +7 707 997 7729
+                    </p>
+                </div>
+            </div>
+        </div>
+
+        <div class="inline-block-mobile footer-div">
+            <div>
+                <p class="font-neue-machina" style="font-size: 1.5em; color: #1400FF;">Dala<br>Digital</p>
+                <p class="font-inter-flex" style="font-size: 0.8em; opacity: 70%;">Студия создания цифровых<br>продуктов полного цикла</p>
+            </div>
+            <div style="margin-left: 0; margin-top: 1em;">
+                <p class="font-inter-flex" style="font-size: 0.9em; margin-left: 2.2em;">Написать нам:</p>
+                <div class="social-icons" style="margin-top: 2em;">
+                    <div class="icon-border" style="padding: 0.2em;">
+                        <a href="#"><img class="bottom-icon" src="{% static 'images/whatsapp (2).png' %}" alt=""></a>
+                    </div>
+                    <div class="icon-border" style="padding: 0.3em">
+                        <a href="#"><img class="bottom-icon" src="{% static 'images/telegram.png' %}" alt=""></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+</div>
+
+<script src="{% static 'scripts/videoToggle.js' %}"></script>
+<script src="{% static 'scripts/accordion.js' %}"></script>
+<script src="{% static 'scripts/slider.js' %}"></script>
+<script src="{% static 'scripts/http_unpkg.com_swiper_swiper-bundle.js' %}"></script>
+<script src="{% static 'scripts/adaptiveImage2.js' %}"></script>
+<script src="{% static 'scripts/menu.js' %}"></script>
+</body>
+</html>

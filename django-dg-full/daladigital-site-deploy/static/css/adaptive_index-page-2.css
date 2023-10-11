@@ -1,0 +1,576 @@
+@media (max-width: 768px) {
+    /* Стили для устройств с шириной экрана меньше 768px */
+    .root {
+        max-width: 430px;
+        margin: 0 auto; /* Это выровняет элемент по центру по горизонтали */
+        position: relative; /* Это позволит вам использовать top: 0 для позиционирования по вертикали */
+        top: 0;
+    }
+    .navbar {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 70%;
+        background-color: rgba(0, 0, 0, 0);
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin-left: 2em;
+        margin-right: 2em;
+        z-index: 1000; /* Устанавливаем z-index, чтобы навбар был выше остального контента */
+    }
+    .dala-digital {
+        font-family: "Neue Machine", monospace;
+        font-weight: 500;
+        font-size: 13px;
+    }
+    .phone-number {
+        font-family: "Inter", sans-serif;
+        font-weight: 600;
+        font-size: 9px;
+        padding-right: 20px;
+    }
+    .menu {
+        display: none;
+        margin-left: 10px;
+        margin-right: 10px;
+    }
+    .language-border {
+        display: none; /* Размещаем элементы внутри .language-border в одну линию */
+        align-items: center; /* Выравниваем элементы по вертикали по центру */
+        border-left: 2px solid #ffffff;
+        padding-left: 20px;
+    }
+    .navbar-flex {
+        background: transparent;
+        border: 0;
+        margin-left: 0;
+    }
+    .left-vector {
+        position: absolute;
+        z-index: 1000;
+        margin-top: 30em;
+        max-height: 328px;
+    }
+    .main-text {
+        position: absolute;
+        z-index: 1000;
+        margin-top: 30em;
+        margin-left: 2em;
+        width: 80%;
+        white-space: pre-wrap !important;
+    }
+    .font-helvetica-neue {
+        font-family: "Helvetica Neue", sans-serif;
+        font-weight: 500;
+        font-size: 1.8em;
+    }
+    .sub-text {
+        position: absolute;
+        z-index: 1000;
+        margin-top: 45em;
+        margin-left: 2em;
+        display: flex; /* Размещаем элементы внутри .language-border в одну линию */
+        align-items: center; /* Выравниваем элементы по вертикали по центру */
+    }
+    .swiper-wrapper {
+        margin-top: 35em;
+    }
+    .swiper-slide {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background-color: transparent; /* Убираем цвет фона слайдов */
+        /* Установите высоту слайдов равной .scroll-bar-div */
+        height: 150px; /* Устанавливаем такую же высоту, как у .scroll-bar-div */
+    }
+    .scroll-bar-div {
+        border-radius: 10px;
+        border: 1px solid #63605e;
+        width: 270px;
+        height: 150px;
+        backdrop-filter: blur(10px); /* Устанавливаем уровень размытия в пикселях */
+        background-color: rgba(51, 51, 51, 0.7); /* Фон с прозрачностью, чтобы сделать размытие более заметным */
+    }
+    .scroll-bar-padding {
+        padding-left: 0.5em;
+        padding-top: 1em;
+    }
+    .font-helvetica-neue-scrollbar-number {
+        font-family: "Helvetica Neue", sans-serif;
+        font-weight: 500;
+        font-size: 2.2em;
+        margin-top: 0;
+        color: #4b4846;
+    }
+    .scroll-bar-center-text {
+        width: 201px;
+        height: 52px;
+        margin-left: 1.5em;
+    }
+    .font-helvetica-neue-scrollbar-text {
+        font-family: "Helvetica Neue", sans-serif;
+        font-weight: 500;
+        font-size: 1.25em;
+        color: white;
+    }
+    .h-video {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+    }
+    .video-wrapper {
+        width: 100%; /* Ширина контейнера */
+        height: 900px; /* Высота контейнера */
+        overflow: hidden; /* Обрезаем видео за пределами контейнера */
+    }
+    .div2 {
+        margin-top: 10em;
+        margin-left: 2em;
+    }
+    .div3 {
+        display: flex; /* Размещаем элементы внутри в одну линию */
+        align-items: center; /* Выравниваем элементы по вертикали по центру */
+        margin-left: 2em;
+    }
+    .bottom-vector {
+        display: none;
+    }
+
+    .font-helvetica-neue-25px {
+        font-family: "Helvetica Neue", sans-serif;
+        font-weight: 500;
+        font-size: 1.00em;
+        white-space: nowrap;
+    }
+
+    .font-helvetica-neue-25px-flex {
+        font-family: "Helvetica Neue", sans-serif;
+        font-weight: 500;
+        font-size: 0.9em;
+        white-space: nowrap;
+    }
+
+    .header-bottom-vector {
+        margin-right: 1.25em;
+    }
+
+    .arrows {
+        display: none;
+    }
+    .div4 {
+        /*margin-top: 1em;*/
+    }
+    .inline-block {
+        display: flex;
+        flex-direction: column;
+    }
+    .frame1 {
+        width: 100%; height: 400px; background-size: cover;
+    }
+
+    .frame2 {
+        width: 100%; height: 400px; background-size: cover;
+    }
+
+    .frame3 {
+        width: 100%; height: 400px; background-size: cover;
+    }
+
+    .frame4 {
+        width: 100%; height:400px; background-size: cover;
+    }
+
+    .frame1-p {
+        font-size: 1.25em;
+        width: 355px;
+        height: 57px;
+        padding-top: 15em;
+        padding-left: 1em;
+        font-family: "Helvetica Neue", sans-serif;
+        font-weight: 500;
+    }
+
+    .frame2-p {
+        color: black;
+        font-weight: 550;
+        font-size: 1.25em;
+        width: 256px;
+        height: 78px;
+        padding-top: 1em;
+        padding-left: 1em;
+        font-family: "Helvetica Neue", sans-serif;
+    }
+
+    .frame3-p {
+        font-size: 1.25em;
+        color: black;
+        width: 222px;
+        height: 52px;
+        padding-top: 15em;
+        padding-left: 1em;
+        font-weight: 550;
+        font-family: "Helvetica Neue", sans-serif;
+    }
+
+    .frame4-p {
+        font-size: 1.25em;
+        width: 339px;
+        height: 74px;
+        padding-top: 13em;
+        padding-left: 1em;
+        font-family: "Helvetica Neue", sans-serif;
+        font-weight: 500;
+    }
+
+    .frame5 {
+        width: 100%;
+        height: 400px;
+        background-size: cover;
+    }
+
+    .frame5-p {
+        font-family: "Helvetica Neue", sans-serif;
+        font-weight: 500;
+        font-size: 1.25em;
+        width: 300px;
+        height: 83px;
+        padding-top: 1em;
+        padding-left: 1em;
+    }
+
+    .frame6 {
+        width: 100%; height: 400px; background-size: cover;
+    }
+
+    .frame6-p {
+        font-size: 1.25em;
+        width: 263px;
+        height: 52px;
+        padding-top: 15em;
+        padding-left: 2em;
+        font-family: "Helvetica Neue", sans-serif;
+        font-weight: 500;
+    }
+
+    .frame7 {
+        width: 100%; height: 400px; background-size: cover;
+    }
+
+    .frame7-p {
+        color: #F19100;
+        font-size: 1.25em;
+        width: 300px;
+        height: 83px;
+        padding-top: 0;
+        padding-left: 2em;
+        font-family: "Helvetica Neue", sans-serif;
+        font-weight: 500;
+    }
+
+    .frame8 {
+        width: 100%;
+        height: 400px;
+        background-size: cover;
+    }
+
+    .frame8-p {
+        color: white;
+        font-size: 1.25em;
+        width: 300px;
+        height: 52px;
+        padding-top: 5%;
+        padding-left: 10%;
+        font-family: "Helvetica Neue", sans-serif;
+        font-weight: 500;
+    }
+
+
+
+    .frame9 {
+        width: 100%;
+        height: 400px;
+        background-size: cover;
+    }
+
+    .frame9-p {
+        font-size: 1.25em;
+        width: 300px;
+        height: 50px;
+        padding-top: 5%;
+        padding-left: 10%;
+        font-family: "Helvetica Neue", sans-serif;
+    }
+
+    .frame10 {
+        width: 100%;
+        height: 400px;
+        background-size: cover;
+    }
+
+    .frame10-p {
+        color: #511916;
+        font-size: 1.25em;
+        width: 300px;
+        height: 52px;
+        padding-top: 5%;
+        padding-left: 10%;
+        font-family: "Helvetica Neue", sans-serif;
+    }
+
+
+    .frame11 {
+        width: 100%;
+        height: 400px;
+        background-size: cover;
+
+    }
+
+    .frame11-p {
+        font-size: 1.25em;
+        width: 300px;
+        height: 50px;
+        padding-top: 5%;
+        padding-left: 10%;
+        font-family: "Helvetica Neue", sans-serif;
+    }
+
+    .frame12 {
+        width: 100%;
+        height: 400px;
+        background-size: cover;
+
+    }
+
+    .frame12-p {
+        font-size: 1.25em;
+        width: 300px;
+        height: 52px;
+        padding-top: 5%;
+        padding-left: 10%;
+        font-family: "Helvetica Neue", sans-serif;
+    }
+
+
+
+    .bottom-vector2 {
+        display: none;
+    }
+
+    #adaptive-image7 {
+        order: 2; /* Порядок для adaptive-image7 на маленьких экранах */
+    }
+
+    #adaptive-image8 {
+        order: 1; /* Порядок для adaptive-image8 на маленьких экранах */
+    }
+
+    .div4-padding {
+        padding: 0;
+        margin: 0;
+    }
+
+    .motion-vector {
+        display: none;
+    }
+
+    .large-scale {
+        display: none;
+    }
+
+    .small-scale {
+        display: inherit;
+    }
+
+
+
+    .div4-horizontal {
+        display: flex;
+        flex-direction: column;
+        margin-left: 0;
+        margin-right: 0;
+        width: 100%;
+    }
+
+
+    .video-container2 {
+        position: relative;
+        display: inline-block;
+    }
+    .left-video {
+        width: 100%;
+    }
+
+    .right-video {
+        width: 100%;
+    }
+    .center-video {
+        width: 100%;
+        height: auto;
+    }
+    .play-button {
+        width: 3em;
+        height: 3em;
+        border-radius: 50%;
+        background-color: white;
+        border: none;
+        cursor: pointer;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+    }
+
+    .play-button::before {
+        content: "";
+        position: absolute;
+        top: 50%;
+        left: 55%;
+        transform: translate(-50%, -50%) rotate(270deg); /* Поворачиваем треугольник на 270 градусов (вправо) */
+        width: 0;
+        height: 0;
+        border-left: 15px solid transparent;
+        border-right: 15px solid transparent;
+        border-top: 15px solid blue;
+    }
+
+    .play-button:focus {
+        outline: none;
+    }
+
+    .only-large-visible {
+        display: none;
+    }
+    .only-small-visible {
+        display: inherit;
+    }
+    .card-mobile {
+        margin-left: 2em;
+        margin-right: 2em;
+        border-radius: 10px;
+        border: 1px solid #63605e;
+        width: 80%;
+        background-color: rgb(25, 25, 25);
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: repeat(9, 1fr);
+    }
+
+    .sector-mobile {
+        background-color: transparent;
+        border: 1px solid #63605e;
+    }
+
+    #sector1-mobile {
+        border-top-left-radius: 10px;
+        border-top-right-radius: 10px;
+    }
+    #sector9-mobile {
+        border-bottom-left-radius: 10px;
+        border-bottom-right-radius: 10px;
+    }
+
+    .footer-vector {
+        display: none;
+    }
+
+    .div3-footer {
+        display: none;
+    }
+
+    .div3-footer-mobile {
+        display: flex;
+        flex-direction: column;
+        margin-left: 3em;
+        margin-right: 2em;
+    }
+    .brief-form-button {
+        border-radius: 10px;
+        background-color: #1400FF;
+        margin: 0;
+        height: 1em;
+    }
+    .inline-block-mobile {
+        display: flex;
+
+    }
+
+    .icon-border {
+        background-color: transparent;
+        border: 1px solid #63605e;
+        border-radius: 10px;
+        padding: 0.6em;
+        margin-left: 1em;
+    }
+    .social-icons {
+        display: flex; /* Размещаем элементы внутри в одну линию */
+        align-items: center; /* Выравниваем элементы по вертикали по центру */
+        margin-left: 1em;
+    }
+    .icon {
+        scale: 50%;
+        transition: transform 0.3s ease; /* Добавляем анимацию для свойства transform */
+    }
+    .icon.rotate {
+        transform: rotate(45deg); /* Поворачиваем на 45 градусов */
+    }
+    .bottom-vector-footer {
+        width: 80%;
+    }
+    .footer {
+        display: none;
+    }
+    .footer-mobile {
+        margin-top: 2em;
+        display: flex;
+        flex-direction: column;
+    }
+    .font-inter-flex {
+        font-family: "Inter", sans-serif;
+        font-weight: 500;
+        font-size: 1.5em;
+    }
+    .font-neue-machina {
+        font-family: "Neue Machina", sans-serif;
+        font-weight: 500;
+        font-size: 1.7em;
+    }
+    .bottom-phone-number {
+        font-family: "Inter", sans-serif;
+        font-weight: 600;
+        font-size: 0.9em;
+        padding-right: 20px;
+    }
+    .footer-div {
+        margin-left: 2em;
+        margin-bottom: 2em;
+    }
+    .bottom-icon {
+        scale: 57%;
+    }
+    .language-switcher {
+        display: flex; /* Размещаем элементы внутри .language-switcher в одну линию */
+        align-items: center; /* Выравниваем элементы по вертикали по центру */
+        margin-left: 8em;
+        white-space: nowrap;
+    }
+    .language-switcher-bottom {
+        display: flex; /* Размещаем элементы внутри .language-switcher в одну линию */
+        align-items: center; /* Выравниваем элементы по вертикали по центру */
+    }
+    .menu-mobile-container {
+        font-size: 0.9em;
+        flex-direction: column;
+        text-align: center;
+        margin-left: 3em;
+    }
+    .menu-mobile {
+        margin-top: 0.5em;
+    }
+    #adaptive-image{
+        display: none;
+    }
+    #adaptive-image-mobile {
+    display: none;
+}
+}

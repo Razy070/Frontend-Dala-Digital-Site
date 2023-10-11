@@ -1,0 +1,305 @@
+{% load static %}
+{% load i18n %}
+<!doctype html>
+<html lang="ru">
+<head>
+    <link rel="stylesheet" href="{% static 'css/index6.css' %}">
+    <link rel="stylesheet" href="{% static 'css/index_brief.css' %}">
+    <link rel="stylesheet" href="{% static 'css/fonts.css' %}">
+    <link rel="stylesheet" href="{% static 'css/fonts-page-6.css' %}">
+    <link rel="stylesheet" href="{% static 'css/adaptive_index6.css' %}">
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Dala Digital</title>
+</head>
+<body>
+<div class="root">
+    <div class="navbar">
+        <div>
+            <a href="{% url 'homepage' %}" class="dala-digital">Dala<br>Digital</a>
+        </div>
+       <div class="font-inter">
+            <a class="menu" href="{% url 'portfolio' %}">{% trans 'Портфолио' %}</a>
+            <a class="menu" href="{% url 'services' %}">{% trans 'Услуги' %}</a>
+            <a class="menu" href="{% url 'articles' %}">{% trans 'Статьи' %}</a>
+        </div>
+       <div class="menu-mobile-container" id="menu" style="display: none;">
+            <a class="menu-mobile font-inter" href="{% url 'portfolio' %}" style="font-size: 0.9em">{% trans 'Портфолио' %}</a>
+            <a class="menu-mobile font-inter" href="{% url 'services' %}" style="font-size: 0.9em">{% trans 'Услуги' %}</a>
+            <a class="menu-mobile font-inter" href="{% url 'articles' %}" style="font-size: 0.9em">{% trans 'Статьи' %}</a>
+            <a class="menu-mobile font-inter" href="{% url 'set_language_en' %}" style="font-size: 0.9em">en</a>
+            <a class="menu-mobile font-inter" href="{% url 'set_language_ru' %}" style="font-size: 0.9em; color: #ff7602;">ru</a>
+        </div>
+        <div class="language-switcher" id="lang-switch">
+            <p class="phone-number" id="phone-number">+7 707 997 7729</p>
+            <div class="language-border">
+                <a class="font-neue-machina" href="{% url 'set_language_en' %}">en</a>
+                <a class="font-neue-machina" href="{% url 'set_language_ru' %}" style="color: #ff7602; padding-left: 15px">ru</a>
+            </div>
+        </div>
+        <button class="navbar-flex">
+            <img src="{% static 'images/strokes.svg' %}" alt="">
+        </button>
+    </div>
+    <div class="header-div">
+        <div class="head-text" id="toptext"><p class="font-helvetica-neue-25px">{% trans 'Разработка веб и мобильных<br> приложении и сервисов' %}</p></div>
+    </div>
+<div class="main-div">
+    <div class="left-head-text"><p>{% trans 'Подберем подходящее решение<br> с учетом целей и возможностей' %}</p></div>
+    <div class="rigth-head-text"><p>{% trans 'Знаем, как решить вашу задачу<br> оптимальным способом' %}</p></div>
+    <div><a class="zakaz-form-button-top" href="#">{% trans 'Заказать приложение' %}</a></div>
+</div>
+    <div class="video-container">
+        <video class="h-video" loop muted autoplay src="{% static 'video/blurry_video.mp4' %}"></video>
+    </div>
+    <div class="new-top-card">
+        <div class="card-padding">
+            <p class="card-text-head">{% trans 'Стоимость разработки мобильного приложения для iOS и Android на заказ в 2023 году' %}</p>
+            <p class="date-text">28.09.2023</p>
+            <img alt="photo-head" src="{% static 'images/image 42 (1).svg' %}" class="card-photo">
+            <p class="card-text">{% trans 'Стоимость разработки мобильного приложения зависит не только от планируемого функционала,<br> но и от множества факторов: нужна ли вам помощь в подготовке документации, дизайн,<br> разработка серверной части и техническая поддержка<br/>Поэтому оценки ниже очень примерные. Почему стоимость создания мобильных приложений<br>такая и что в неё входит рассказали в этой статье. Пусть вас не пугает её размер — статья<br> задумана как подробный ответ на вопрос «сколько стоит разработка мобильных приложения в 2023 году».<br><br/><br/>Если вы считаете, что нет никого разговорчивее, чем человек (и мы с вами согласны), то позвоните<br> нашим менеджерам, чтобы обсудить стоимость для вашего проекта или оставьте заявку и<br> менеджеры студии свяжутся с вами сами :)<br><br/>Оценки разработки приложений по категориям<br/>Относительно прошлого года средняя стоимость разработки мобильных приложений основных<br> категорий не изменилась и осталась практически той же:<br><br/><br/>1. Базовое (офлайн) приложение, визитная карточка, простой функционалот 150 до 450 тыс.<br> рублей 1-3 недели<br/><br>2. Что-то, подразумевающее редактирование/модерацию в онлайне, наполнение статей и<br> контента в админке, т.е. с серверной частьюот 450 до 950 тыс. рублей 2-3 недели•<br/><br>3. Чат бот, интерактивный помощникв районе 1 млн рублей 1 месяц•<br/><br>4. IoT, связка с устройствами по Bluetooth/Wi-Fi/другим протоколам 1–1.5 млн рублей 1.5-2 месяца•<br/><br>5. Мессенджер (одно из наиболее популярных направлений)от 1.5 млн рублейот 2 месяцев•<br/><br>6. Дополненная и виртуальная реальность 1.8–3.5 млн рублейот 2 месяцев•<br/><br>7. Такси, доставка пицц, воды, продуктов и прочего, включая модуль контроля и взаимодействия с<br> курьерамиот 2 до 3 млн< рублейот 2 месяцев•<br/><br>8. Магазины/каталоги, включая личный кабинет, поиск, механику скидок, эквайрингоколо 2-3 млн<br> рублей 3-4 месяца•<br/><br>9. Социальные сети сильно варьируются по функционалу, но вписываются в рамкиот 2 до 5 млн<br> рублейот 3 месяцев•<br/><br>10. Самое дорогое – корпоративные приложения, предполагающие, как правило, интеграцию с<br> целым спектром сервисов и имеющие повышенные требования к защите данных и<br> обеспечению безопасности.' %}</p>
+        </div>
+    </div>
+    <div class="div3" style="margin-top: 7%;">
+        <p class="font-helvetica-neue" style="color: white; white-space: nowrap;">{% trans 'С чего начать?' %}</p>
+        <img class="footer-vector" src="{% static 'images/vector-191-2.svg' %}" alt="bottom-vector" style="padding-left: 15%">
+    </div>
+    <div class="div3-footer">
+        <p class="font-helvetica-neue-25px-flex word-wrap" style="opacity: 70%;">{% trans 'Заполните бриф с описанием желаемого проекта. Мы сможем сразу дать ориентировочную оценку проекта по стоимости и срокам, если вы кратко опишете его основную идею и функции.' %}</p>
+        <div class="brief-form-button">
+            <p class="font-helvetica-neue-25px">{% trans 'Заполнить бриф' %}</p>
+        </div>
+        <div class="social-icons">
+            <div class="icon-border">
+                    <a href="#"><img style="" src="{% static 'images/whatsapp (2).png' %}" alt="whatsapp"></a>
+            </div>
+            <div class="icon-border" style="padding: 17px">
+                    <a href="#"><img style="" src="{% static 'images/telegram.png' %}" alt="telegram"></a>
+            </div>
+        </div>
+    </div>
+    <div class="div3-footer-mobile">
+        <p class="font-helvetica-neue-25px-flex word-wrap" style="opacity: 70%; margin-top: 5%; margin-bottom: 15%">{% trans 'Заполните бриф с описанием желаемого проекта. Мы сможем сразу дать ориентировочную оценку проекта по стоимости и срокам, если вы кратко опишете его основную идею и функции.' %}</p>
+        <div class="inline-block-mobile">
+            <div class="brief-form-button">
+                <p class="font-helvetica-neue-25px-flex" style="width: 20px; padding: 0;">{% trans 'Заполнить бриф' %}</p>
+            </div>
+            <div class="social-icons">
+                <div class="icon-border" style="padding: 0.2em;">
+                    <a href="#"><img style="scale: 57%" src="{% static 'images/whatsapp (2).png' %}" alt="whatsapp"></a>
+                </div>
+                <div class="icon-border" style="padding: 0.3em">
+                    <a href="#"><img style="scale: 57%" src="{% static 'images/telegram.png' %}" alt="telegram"></a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="main-brief" id="brief">
+     <div class="left-fixed-div">
+         <div class="column-text-head">
+             <div class="text-head">
+                 <p class="font-helvetica-neue-78px">{% trans 'Заказ Дизайна' %}</p>
+             </div>
+             <div class="font-helvetica-neue-25px-tx">{% trans 'Каждую задачу мы решаем тщательно<br/>с креативным подходом.<br/><br/>Для начала сотрудничества необходимо обменяться информацией о вашем проекте и предоставить контактные данные. Мы свяжемся с вами для обсуждения всех деталей.' %}</div>
+         </div>
+         <div class="new-pr"><p class="font-helvetica-neue-25px">{% trans 'Новый проект' %}</p></div>
+         <div class="main-br">
+             <input type="checkbox" id="toggle1" class="toggle-input-br">
+             <label for="toggle1" class="toggle-label-br font-helvetica-neue-text-18px">{% trans 'Лендинг' %}</label>
+
+             <label for="toggle2"></label><input type="checkbox" id="toggle2" class="toggle-input-br">
+             <label for="toggle2" class="toggle-label2-br font-helvetica-neue-text-18px">{% trans 'Интернет-магазин' %}</label>
+
+             <label for="toggle3"></label><input type="checkbox" id="toggle3" class="toggle-input-br">
+             <label for="toggle3" class="toggle-label2-br font-helvetica-neue-text-18px">{% trans 'Веб-приложение' %}</label>
+         </div>
+         <div class="main-br">
+             <label for="toggle4"></label><input type="checkbox" id="toggle4" class="toggle-input-br">
+             <label for="toggle4" class="toggle-label-br font-helvetica-neue-text-18px">{% trans 'Мобильное приложение' %}</label>
+
+             <label for="toggle5"></label><input type="checkbox" id="toggle5" class="toggle-input-br">
+             <label for="toggle5" class="toggle-label2-br font-helvetica-neue-text-18px">{% trans 'UX / UI дизайн' %}</label>
+
+             <label for="toggle6"></label><input type="checkbox" id="toggle6" class="toggle-input-br">
+             <label for="toggle6" class="toggle-label2-br font-helvetica-neue-text-18px">{% trans 'Брендинг, создание лого' %}</label>
+         </div>
+         <div class="main-br">
+             <label for="toggle7"></label><label for="toggle7"></label><input type="checkbox" id="toggle7" class="toggle-input-br">
+             <label for="toggle7" class="toggle-label-br font-helvetica-neue-text-18px">{% trans 'Motion-дизайн' %}</label>
+
+             <label for="toggle8"></label><label for="toggle8"></label><input type="checkbox" id="toggle8" class="toggle-input-br">
+             <label for="toggle8" class="toggle-label2-br font-helvetica-neue-text-18px">{% trans 'SMM' %}</label>
+
+             <label for="toggle9"></label><label for="toggle9"></label><input type="checkbox" id="toggle9" class="toggle-input-br">
+             <label for="toggle9" class="toggle-label2-br font-helvetica-neue-text-18px">{% trans 'Таргетированная, Контекстная реклама' %}</label>
+         </div>
+     <div>
+         <div class="new-pr"><p class="font-helvetica-neue-25px">{% trans 'Новый проект' %}</p></div>
+         <label for="name1">{% trans 'Имя:' %}</label>
+         <input type="text" id="name1" placeholder="Название компании" class="input-style font-helvetica-neue-text-18px">
+     </div>
+         <div>
+             <div class="new-pr"><p class="font-helvetica-neue-25px">{% trans 'Описание проекта и примерный бюджет' %}</p></div>
+             <label for="name2">{% trans 'Имя:' %}</label>
+             <input type="text" id="name2" placeholder="Например: Сайты конкурентов" class="input-style font-helvetica-neue-text-18px">
+         </div>
+         <div>
+             <div class="new-pr"><p class="font-helvetica-neue-25px">{% trans 'Телефон' %}</p></div>
+             <label for="name3">{% trans 'Имя:' %}</label>
+             <input type="text" id="name3" placeholder="Или мессенджер" class="input-style font-helvetica-neue-text-18px">
+         </div>
+         <div>
+             <div class="new-pr"><p class="font-helvetica-neue-25px">{% trans 'Имя' %}</p></div>
+             <label for="name4">{% trans 'Имя:' %}</label>
+             <input type="text" id="name4" placeholder="Как к вам обращаться?" class="input-style font-helvetica-neue-text-18px">
+             <div style="margin-top: 50px; margin-left: 50px">
+                 <p class="zakaz-form-button font-helvetica-neue-25px">{% trans 'Отправить заявку' %}</p>
+             </div>
+         </div>
+     </div>
+    <div>
+        <video class="h-video-brief" loop muted autoplay src="{% static 'video/pexels_videos_2450251 (2160p).mp4' %}"></video>
+    </div>
+</div>
+    <div class="div2" style="margin-top: 0">
+        <p class="font-helvetica-neue">{% trans 'Частые вопросы' %}</p>
+    </div>
+    <div class="accordion-container" style="margin-right: 15%; margin-left: 15%; margin-bottom: 10%">
+        <div class="accordion">
+            <div class="accordion-header">
+                <p class="font-helvetica-neue-25px-flex word-wrap">{% trans 'Занимаетесь ли вы поддержкой проекта? Сколько это стоит?' %}</p>
+                <button class="accordion-toggle">
+                    <img class="icon" src="{% static 'images/vector-194-2.svg' %}" alt="">
+                </button>
+            </div>
+            <div class="accordion-content">
+                <div class="content-inner tx-white font-helvetica-neue-25px-flex">
+                    <p class="word-wrap">{% trans 'Мы предоставляем гарантию на свои работы, по истечении ее срока мы можем заключить с вами договор на техническую поддержку. Он будет включать в себя определенное количество часов в месяц по установленной абонентской плате (здесь мы с вами обсудим все индивидуально). В рамках этих часов можно поддерживать актуальность и стабильность работы приложения или проводить доработки по функционалу.' %}</p>
+                </div>
+            </div>
+        </div>
+        <div class="accordion">
+            <div class="accordion-header">
+                <p class="font-helvetica-neue-25px-flex word-wrap">{% trans 'Беретесь ли вы за доработку приложений?' %}</p>
+                <button class="accordion-toggle">
+                    <img class="icon" src="{% static 'images/vector-194-2.svg' %}" alt="">
+                </button>
+            </div>
+            <div class="accordion-content">
+                <div class="content-inner tx-white font-helvetica-neue-25px-flex">
+                    <p class="word-wrap">{% trans 'Мы берем проекты на доработку. Перед ознакомлением с исходным кодом проекта подписываем NDA. Далее осуществляем ревью приложений и даем рекомендации по их улучшению. Формат работы может быть как Time & Materials (оплата за фактически затраченное на задачи время), так и Retainer (стоимость работы команды или отдельных специалистов за месяц) или FixPrice (зафиксированная стоимость всего проекта).' %}</p>
+                </div>
+            </div>
+        </div>
+        <div class="accordion">
+            <div class="accordion-header">
+                <p class="font-helvetica-neue-25px-flex word-wrap">{% trans 'У вас нет проектов, похожих на мой, а вы точно справитесь?' %}</p>
+                <button class="accordion-toggle">
+                    <img class="icon" src="{% static 'images/vector-194-2.svg' %}" alt="">
+                </button>
+            </div>
+            <div class="accordion-content">
+                <div class="content-inner tx-white font-helvetica-neue-25px-flex">
+                    <p class="word-wrap">{% trans 'Если вы не увидели в нашем портфолио проекта, аналогичного вашему, возможно, просто с подобной идеей к нам еще не обращались, либо мы не можем публиковать кейс на сайте ввиду ограничений по конфиденциальности. Однако уникальных приложений на рынке существует очень много, и они обычно обладают стандартным функционалом: авторизация, подписки, каталог, личный кабинет, навигация, платежные системы и др. Наверняка необходимые вам элементы уже реализованы нашей студией в других проектах. Мы подробно обсудим с вами детали вашей идеи и предложим варианты реализации, исходя из накопленной продуктовой экспертизы.' %}</p>
+                </div>
+            </div>
+        </div>
+        <div class="accordion">
+            <div class="accordion-header">
+                <p class="font-helvetica-neue-25px-flex word-wrap">{% trans 'Передаете ли вы права на приложение?' %}</p>
+                <button class="accordion-toggle">
+                    <img class="icon" src="{% static 'images/vector-194-2.svg' %}" alt="">
+                </button>
+            </div>
+            <div class="accordion-content">
+                <div class="content-inner tx-white font-helvetica-neue-25px-flex">
+                    <p class="word-wrap">{% trans 'Да, мы прописываем в договоре информацию о том, что заказчик получает все права свой продукт, а с нашей стороны они наоборот отчуждаются.' %}</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="bottom-line">
+        <img class="bottom-vector-footer" src="{% static 'images/vector-192-1.svg' %}" alt="">
+    </div>
+    <div class="footer">
+        <div>
+            <a href="{% url 'homepage' %}" class="font-neue-machina" style="font-size: 44px; color: #1400FF;">Dala<br>Digital</a>
+            <p class="font-inter" style="font-size: 20px; opacity: 70%; width: 160px; white-space: normal;">{% trans 'Студия создания цифровых продуктов полного цикла' %}</p>
+        </div>
+        <div>
+            <div class="bottom-links">
+                <a class="font-inter" href="{% url 'portfolio' %}">{% trans 'Портфолио' %}</a>
+                <a class="font-inter bottom-links-padding" href="{% url 'services' %}">{% trans 'Услуги' %}</a>
+                <a class="font-inter bottom-links-padding" href="#">{% trans 'Контакты' %}</a>
+            </div>
+        </div>
+        <div>
+            <p class="font-inter">{% trans 'Написать нам:' %}</p>
+            <div class="social-icons">
+                <div class="icon-border">
+                    <a href="#"><img src="{% static 'images/whatsapp (2).png' %}" alt=""></a>
+                </div>
+                <div class="icon-border" style="padding: 17px">
+                    <a href="#"><img src="{% static 'images/telegram.png' %}" alt=""></a>
+                </div>
+            </div>
+        </div>
+        <div class="bottom-lang">
+             <div class="language-switcher">
+                <a class="font-neue-machina" href="{% url 'set_language_en' %}" style="margin-right: 20px;">en</a>
+                <a class="font-neue-machina" href="{% url 'set_language_ru' %}" style="color: #1400FF;">ru</a>
+            </div>
+            <div>
+                <p class="bottom-phone-number">+7 707 997 7729</p>
+            </div>
+        </div>
+    </div>
+    <div class="footer-mobile">
+        <div class="inline-block-mobile footer-div">
+            <div>
+                <div class="bottom-links">
+                    <a class="font-inter-flex" style="font-size: 0.9em" href="{% url 'portfolio' %}">{% trans 'Портфолио' %}</a>
+                    <a class="font-inter-flex bottom-links-padding" style="font-size: 0.9em" href="{% url 'services' %}">{% trans 'Услуги' %}</a>
+                    <a class="font-inter-flex bottom-links-padding" style="font-size: 0.9em" href="#">{% trans 'Контакты' %}</a>
+                </div>
+            </div>
+            <div class="bottom-lang" style="margin-left: 6em;">
+                <div class="language-switcher-bottom">
+                    <a class="font-neue-machina" href="{% url 'set_language_en' %}" style="margin-right: 20px; font-size: 1em;">en</a>
+                    <a class="font-neue-machina" href="{% url 'set_language_ru' %}" style="color: #1400FF; font-size: 1em;">ru</a>
+                </div>
+                <div>
+                    <p class="bottom-phone-number">
+                        +7 707 997 7729
+                    </p>
+                </div>
+            </div>
+        </div>
+
+        <div class="inline-block-mobile footer-div">
+            <div>
+                <a href="{% url 'homepage' %}" class="font-neue-machina" style="font-size: 1.5em; color: #1400FF;">Dala<br>Digital</a>
+                <p class="font-inter-flex" style="font-size: 0.8em; opacity: 70%; width: 10em; white-space: normal;">{% trans 'Студия создания цифровых продуктов полного цикла' %}</p>
+            </div>
+            <div style="margin-left: 0; margin-top: 1em;">
+                <p class="font-inter-flex" style="font-size: 0.9em; margin-left: 2.2em;">{% trans 'Написать нам:' %}</p>
+                <div class="social-icons" style="margin-top: 2em;">
+                    <div class="icon-border" style="padding: 0.2em;">
+                        <a href="#"><img class="bottom-icon" src="{% static 'images/whatsapp (2).png' %}" alt=""></a>
+                    </div>
+                    <div class="icon-border" style="padding: 0.3em">
+                        <a href="#"><img class="bottom-icon" src="{% static 'images/telegram.png' %}" alt=""></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<script src="{% static 'scripts/accordion.js' %}"></script>
+<script src="{% static 'scripts/menu.js' %}"></script>
+<script src="{% static 'scripts/briefCancel.js' %}"></script>
+
+</body>
+</html>

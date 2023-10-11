@@ -1,0 +1,85 @@
+{% load static %}
+{% load i18n %}
+<!doctype html>
+<html lang="ru">
+<head>
+    <link rel="stylesheet" href="{% static 'css/index_brief.css' %}">
+    <link rel="stylesheet" href="{% static 'css/fonts.css' %}">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Dala Digital</title>
+</head>
+<body>
+{% block brief %}
+    <div style="width: 100%; height: auto; display: flex">
+     <div class="left-fixed-div">
+         <div class="column-text-head">
+             <div class="text-head">
+                 <p class="font-helvetica-neue-78px">Заказ Дизайна</p>
+             </div>
+             <div class="font-helvetica-neue-25px-tx">Каждую задачу мы решаем тщательно<br/>с креативным подходом.<br/><br/>Для начала сотрудничества необходимо обменяться информацией о вашем проекте и предоставить контактные данные. Мы свяжемся с вами для обсуждения всех деталей.</div>
+         </div>
+         <div class="new-pr"><p class="font-helvetica-neue-25px">Новый проект</p></div>
+         <div class="main">
+             <input type="checkbox" id="toggle1" class="toggle-input">
+             <label for="toggle1" class="toggle-label font-helvetica-neue-text-18px">Лендинг</label>
+
+             <label for="toggle2"></label><input type="checkbox" id="toggle2" class="toggle-input">
+             <label for="toggle2" class="toggle-label2 font-helvetica-neue-text-18px">Интернет-магазин</label>
+
+             <label for="toggle3"></label><input type="checkbox" id="toggle3" class="toggle-input">
+             <label for="toggle3" class="toggle-label2 font-helvetica-neue-text-18px">Веб-приложение</label>
+         </div>
+         <div class="main">
+             <label for="toggle4"></label><input type="checkbox" id="toggle4" class="toggle-input">
+             <label for="toggle4" class="toggle-label font-helvetica-neue-text-18px">Мобильное приложение</label>
+
+             <label for="toggle5"></label><input type="checkbox" id="toggle5" class="toggle-input">
+             <label for="toggle5" class="toggle-label2 font-helvetica-neue-text-18px">UX / UI дизайн</label>
+
+             <label for="toggle6"></label><input type="checkbox" id="toggle6" class="toggle-input">
+             <label for="toggle6" class="toggle-label2 font-helvetica-neue-text-18px">Брендинг, создание лого</label>
+         </div>
+         <div class="main">
+             <label for="toggle7"></label><label for="toggle7"></label><input type="checkbox" id="toggle7" class="toggle-input">
+             <label for="toggle7" class="toggle-label font-helvetica-neue-text-18px">Motion-дизайн</label>
+
+             <label for="toggle8"></label><label for="toggle8"></label><input type="checkbox" id="toggle8" class="toggle-input">
+             <label for="toggle8" class="toggle-label2 font-helvetica-neue-text-18px">SMM</label>
+
+             <label for="toggle9"></label><label for="toggle9"></label><input type="checkbox" id="toggle9" class="toggle-input">
+             <label for="toggle9" class="toggle-label2 font-helvetica-neue-text-18px">Таргетированная, Контекстная реклама</label>
+         </div>
+     <div>
+         <div class="new-pr"><p class="font-helvetica-neue-25px">Новый проект</p></div>
+         <label for="name1">Имя:</label>
+         <input type="text" id="name1" placeholder="Название компании" class="input-style font-helvetica-neue-text-18px">
+     </div>
+         <div>
+             <div class="new-pr"><p class="font-helvetica-neue-25px">Описание проекта и примерный бюджет</p></div>
+             <label for="name2">Имя:</label>
+             <input type="text" id="name2" placeholder="Например: Сайты конкурентов" class="input-style font-helvetica-neue-text-18px">
+         </div>
+         <div>
+             <div class="new-pr"><p class="font-helvetica-neue-25px">Телефон</p></div>
+             <label for="name3">Имя:</label>
+             <input type="text" id="name3" placeholder="Или мессенджер" class="input-style font-helvetica-neue-text-18px">
+         </div>
+         <div>
+             <div class="new-pr"><p class="font-helvetica-neue-25px">Имя</p></div>
+             <label for="name4">Имя:</label>
+             <input type="text" id="name4" placeholder="Как к вам обращаться?" class="input-style font-helvetica-neue-text-18px">
+             <div style="margin-top: 50px; margin-left: 50px">
+                 <a class="zakaz-form-button font-helvetica-neue-25px">Отправить заявку</a>
+             </div>
+         </div>
+     </div>
+    <div>
+        <video class="h-video" loop muted autoplay src="brief-img/pexels_videos_2450251 (2160p).mp4"></video>
+    </div>
+</div>
+{% endblock %}
+
+</body>
+</html>

@@ -1,0 +1,97 @@
+.dala-digital {
+    font-family: "Neue Machine", monospace;
+    font-weight: 500;
+    font-size: 30px;
+}
+
+.font-inter {
+    font-family: "Inter", sans-serif;
+    font-weight: 500;
+    font-size: 25px;
+}
+
+.phone-number {
+    font-family: "Inter", sans-serif;
+    font-weight: 600;
+    font-size: 25px;
+    padding-right: 20px;
+}
+
+.font-neue-machina {
+    font-family: "Neue Machina", sans-serif;
+    font-weight: 500;
+    font-size: 28px;
+}
+
+.font-helvetica-neue {
+    font-family: "Helvetica Neue", sans-serif;
+    font-weight: 500;
+    font-size: 78px;
+}
+
+.font-helvetica-neue-25px {
+    font-family: "Helvetica Neue", sans-serif;
+    font-weight: 500;
+    font-size: 25px;
+    white-space: nowrap;
+}
+
+.font-helvetica-neue-scrollbar-number {
+    font-family: "Helvetica Neue", sans-serif;
+    font-weight: 500;
+    font-size: 57px;
+    margin-top: 0;
+    color: #4b4846;
+}
+
+.font-helvetica-neue-scrollbar-text {
+    font-family: "Helvetica Neue", sans-serif;
+    font-weight: 500;
+    font-size: 32px;
+    color: white;
+}
+
+.bottom-phone-number {
+    font-family: "Inter", sans-serif;
+    font-weight: 600;
+    font-size: 25px;
+    padding-right: 20px;
+}
+
+.font-hel {
+    color: white;
+    font-size: 20px;
+    font-family: "Helvetica Neue", sans-serif;
+    font-weight: 500;
+    line-height: 26px;
+    word-wrap: break-word
+}
+
+.font-helvetica-neue-text-18px {
+    color: white;
+    font-size: 18px;
+    font-family: Helvetica Neue, sans-serif;
+    font-weight: 500;
+    line-height: 23.40px;
+    word-wrap: break-word
+}
+
+.font-helvetica-neue-25px-tx {
+    width: 769px;
+    opacity: 0.70;
+    color: white;
+    font-size: 25px;
+    font-family: Helvetica Neue,sans-serif;
+    font-weight: 500;
+    line-height: 32px;
+    word-wrap: break-word
+}
+
+.font-helvetica-neue-78px {
+    font-family: "Helvetica Neue", sans-serif;
+    font-weight: 500;
+    font-size: 78px;
+    white-space: nowrap;
+    color: white;
+    word-wrap: break-word
+}

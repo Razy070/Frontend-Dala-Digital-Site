@@ -1,0 +1,540 @@
+{% load static %}
+{% load i18n %}
+<!doctype html>
+<html lang="ru">
+<head>
+    <link rel="stylesheet" href="{% static 'css/index.css' %}">
+    <link rel="stylesheet" href="{% static 'css/index_brief.css' %}">
+    <link rel="stylesheet" href="{% static 'css/fonts.css' %}">
+    <link rel="stylesheet" href="{% static 'css/http_unpkg.com_swiper_swiper-bundle.css' %}">
+    <link rel="stylesheet" href="{% static 'css/adaptive_index.css' %}">
+    <link rel="stylesheet" href="{% static 'css/slider1.css' %}">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Dala Digital</title>
+</head>
+<body>
+<div class="root">
+    <div class="navbar">
+        <div>
+            <a href="{% url 'homepage' %}" class="dala-digital">Dala<br>Digital</a>
+        </div>
+        <div class="font-inter">
+            <a class="menu" href="{% url 'portfolio' %}">{% trans 'Портфолио' %}</a>
+            <a class="menu" href="{% url 'services' %}">{% trans 'Услуги' %}</a>
+            <a class="menu" href="{% url 'articles' %}">{% trans 'Статьи' %}</a>
+        </div>
+        <div class="menu-mobile-container" id="menu" style="display: none;">
+            <a class="menu-mobile font-inter" href="{% url 'portfolio' %}" style="font-size: 0.9em">{% trans 'Портфолио' %}</a>
+            <a class="menu-mobile font-inter" href="{% url 'services' %}" style="font-size: 0.9em">{% trans 'Услуги' %}</a>
+            <a class="menu-mobile font-inter" href="{% url 'articles' %}" style="font-size: 0.9em">{% trans 'Статьи' %}</a>
+            <a class="menu-mobile font-inter" href="{% url 'set_language_en' %}" style="font-size: 0.9em">en</a>
+            <a class="menu-mobile font-inter" href="{% url 'set_language_ru' %}" style="font-size: 0.9em; color: #ff7602;">ru</a>
+        </div>
+        <div class="language-switcher" id="lang-switch">
+            <p class="phone-number" id="phone-number">+7 707 997 7729</p>
+            <div class="language-border">
+                <a class="font-neue-machina" href="{% url 'set_language_en' %}">en</a>
+                <a class="font-neue-machina" href="{% url 'set_language_ru' %}" style="color: #ff7602; padding-left: 15px">ru</a>
+            </div>
+        </div>
+        <button class="navbar-flex">
+            <img src="{% static 'images/strokes.svg' %}" alt="">
+        </button>
+        <img class="left-vector" src="{% static 'images/vector-189.svg' %}" alt="left-vector">
+    </div>
+    <div class="main-text">
+        <p class="font-helvetica-neue">{% trans 'Студия создания цифровых продуктов полного цикла' %}</p>
+    </div>
+    <div class="sub-text">
+        <p class="font-helvetica-neue-25px">{% trans 'Мы делаем:' %}</p>
+        <img id="adaptive-image-mobile" class="header-bottom-vector" src="{% static 'images/vector190(small).svg' %}" alt="bottom-vector">
+        <img id="adaptive-image" class="header-bottom-vector" src="{% static 'images/vector-190.svg' %}" alt="bottom-vector">
+    </div>
+    <div class="slider">
+        <div class="swiper" style="overflow: hidden">
+            <div class="swiper-wrapper">
+                <div class="swiper-slide">
+                    <div class="scroll-bar-div">
+                        <div class="scroll-bar-padding">
+                            <div class="font-helvetica-neue-scrollbar-number">01</div>
+                            <div class="scroll-bar-center-text font-helvetica-neue-scrollbar-text">{% trans 'Мобильные приложения' %}</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="swiper-slide">
+                    <div class="scroll-bar-div">
+                        <div class="scroll-bar-padding">
+                            <div class="font-helvetica-neue-scrollbar-number">02</div>
+                            <div class="scroll-bar-center-text font-helvetica-neue-scrollbar-text">{% trans 'Сайты и веб-приложения' %}</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="swiper-slide">
+                    <div class="scroll-bar-div">
+                        <div class="scroll-bar-padding">
+                            <div class="font-helvetica-neue-scrollbar-number">03</div>
+                            <div class="scroll-bar-center-text font-helvetica-neue-scrollbar-text">{% trans 'UX / UI дизайн. Брендинг, создание логотипа' %}</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="swiper-slide">
+                    <div class="scroll-bar-div">
+                        <div class="scroll-bar-padding">
+                            <div class="font-helvetica-neue-scrollbar-number">04</div>
+                            <div class="scroll-bar-center-text font-helvetica-neue-scrollbar-text">{% trans 'Motion-Дизайн' %}</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="swiper-slide">
+                    <div class="scroll-bar-div">
+                        <div class="scroll-bar-padding">
+                            <div class="font-helvetica-neue-scrollbar-number">05</div>
+                            <div class="scroll-bar-center-text font-helvetica-neue-scrollbar-text">{% trans 'SMM, Таргетная и контекстная реклама' %}</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="arrows">
+                <div class="button-prev arrow-button">
+                    <img src="{% static 'images/vector-196.svg' %}" alt="">
+                </div>
+                <div class="button-next arrow-button">
+                    <img src="{% static 'images/vector-195.svg' %}" alt="">
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="video-container video-wrapper">
+        <video class="h-video" loop muted autoplay src="{% static 'video/head_video.mp4' %}"></video>
+    </div>
+    <div class="div2">
+        <p class="font-helvetica-neue">{% trans 'Портфолио' %}</p>
+    </div>
+    <div class="div3">
+        <p class="font-helvetica-neue-25px-flex" style="opacity: 70%;">{% trans 'Мобильные приложения' %}</p>
+        <img class="bottom-vector" src="{% static 'images/vector-190.svg' %}" alt="bottom-vector">
+    </div>
+    <div class="div4">
+        <div class="div4-padding">
+            <div class="inline-block">
+                <div id="adaptive-image1" class="adaptive-image frame1">
+                    <p class="word-wrap frame1-p">{% trans 'Создание приложения для программы лояльности ВПЛЮСЕ' %}</p>
+                </div>
+                <div id="adaptive-image2" class="adaptive-image frame2">
+                    <p class="word-wrap frame2-p">{% trans 'Приложения для аренды спортивных площадок в Астане - OYNA' %}</p>
+                </div>
+            </div>
+            <div class="inline-block">
+                <div id="adaptive-image3" class="adaptive-image frame3">
+                    <p class="word-wrap frame3-p" >{% trans 'Мобильное dating приложение Hangout' %}</p>
+                </div>
+                <div id="adaptive-image4" class="adaptive-image frame4">
+                    <p class="word-wrap frame4-p">{% trans 'Мобильное приложение для помощи прибывания в Мекке и совершения Хаджа и Умры' %}</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="div3" style="margin-top: 10%; margin-bottom: 10%">
+        <p class="font-helvetica-neue-25px-flex" style="opacity: 70%;">{% trans 'Сайты' %}</p>
+        <img class="bottom-vector2" src="{% static 'images/vector-191-4.svg' %}" alt="bottom-vector">
+    </div>
+    <div class="div4">
+        <div class="div4-padding">
+            <div class="inline-block">
+                <div id="adaptive-image5" class="adaptive-image frame5">
+                    <p class="word-wrap frame5-p">{% trans 'Разработка сайта и дизайна для архитектурного бюро Проект Интех Плюс' %}</p>
+                </div>
+                <div id="adaptive-image6" class="adaptive-image frame6">
+                    <p class="word-wrap frame6-p">{% trans 'Лэндинг для привлечения водителей в такси APARU' %}</p>
+                </div>
+            </div>
+            <div class="inline-block">
+                <div id="adaptive-image7" class="adaptive-image frame7">
+                    <p class="word-wrap frame7-p">{% trans 'Разработка сайта и логотипа для строительной компании в Грузии - HM Group' %}</p>
+                </div>
+                <div id="adaptive-image8" class="adaptive-image frame8">
+                    <p class="word-wrap frame8-p">{% trans 'Создание сайта для центра выкупа недвижимости - NVSbuy' %}</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="div3" style="margin-top: 10%; margin-bottom: 10%">
+        <p class="font-helvetica-neue-25px large-scale" style="opacity: 70%;">{% trans 'Motion Дизайн' %}</p>
+        <p class="font-helvetica-neue-25px-flex small-scale" style="opacity: 70%;">{% trans 'Motion-дизайны' %}</p>
+        <img class="motion-vector" src="{% static 'images/vector-191-4.svg' %}" alt="bottom-vector">
+    </div>
+    <div class="div4">
+        <div class="div4-horizontal">
+            <div class="video-container2">
+                <video id="video1" class="left-video" src="{% static 'video/Рекламный пост для ЖК AUSTRIA. Базис А.mp4' %}"></video>
+                <button class="play-button" onclick="toggleVideo('video1')"></button>
+            </div>
+            <div class="video-container2">
+                <video id="video2" class="right-video" src="{% static 'video/Рекламный ролик для казахстанского сервиса такси APARU.mp4' %}"></video>
+                <button class="play-button" onclick="toggleVideo('video2')"></button>
+            </div>
+        </div>
+    </div>
+    <div class="div2" style="margin-top: 10%">
+        <p class="font-helvetica-neue">{% trans 'Этапы разработки' %}</p>
+    </div>
+    <div class="div3 only-large-visible" style="margin-top: 10%; margin-bottom: 10%">
+        <p class="font-helvetica-neue-25px" style="opacity: 70%; white-space: normal; ">{% trans 'Как мы создаем сайты и приложения для iOS и Android' %}</p>
+        <img src="{% static 'images/vector-191-4.svg' %}" alt="bottom-vector" style="padding-left: 15%">
+    </div>
+    <div class="card only-large-visible">
+        <div class="sector" id="sector1">
+            <div class="scroll-bar-padding">
+                <div class="font-helvetica-neue-scrollbar-number">01</div>
+                <div class="scroll-bar-center-text font-helvetica-neue-scrollbar-text">{% trans 'Сбор информации и аналитика' %}</div>
+            </div>
+        </div>
+        <div class="sector" id="sector2">
+            <div class="scroll-bar-padding">
+                <div class="font-helvetica-neue-scrollbar-number">02</div>
+                <div class="scroll-bar-center-text font-helvetica-neue-scrollbar-text">{% trans 'Техническое задание' %}</div>
+            </div>
+        </div>
+        <div class="sector" id="sector3">
+            <div class="scroll-bar-padding">
+                <div class="font-helvetica-neue-scrollbar-number">03</div>
+                <div class="scroll-bar-center-text font-helvetica-neue-scrollbar-text">{% trans 'Прототип приложения' %}</div>
+            </div>
+        </div>
+        <div class="sector" id="sector4">
+            <div class="scroll-bar-padding">
+                <div class="font-helvetica-neue-scrollbar-number">04</div>
+                <div class="scroll-bar-center-text font-helvetica-neue-scrollbar-text">{% trans 'UX/UI дизайн интерфейса' %}</div>
+            </div>
+        </div>
+        <div class="sector" id="sector5-6">
+            <div class="scroll-bar-padding" style="position: absolute">
+                <div class="font-helvetica-neue-scrollbar-number">05</div>
+                <div class="scroll-bar-center-text font-helvetica-neue-scrollbar-text">{% trans 'Разработка' %}</div>
+            </div>
+            <video autoplay loop muted src="{% static 'video/blurry_video.mp4' %}" style="width: 200%; height: 100%; object-fit: cover;"></video>
+        </div>
+        <div class="sector" id="sector7">
+            <div class="scroll-bar-padding">
+                <div class="font-helvetica-neue-scrollbar-number">06</div>
+                <div class="scroll-bar-center-text font-helvetica-neue-scrollbar-text">{% trans 'Прототип приложения' %}</div>
+            </div>
+        </div>
+        <div class="sector" id="sector8">
+            <div class="scroll-bar-padding">
+                <div class="font-helvetica-neue-scrollbar-number">07</div>
+                <div class="scroll-bar-center-text font-helvetica-neue-scrollbar-text">{% trans 'Прототип приложения' %}</div>
+            </div>
+        </div>
+        <div class="sector" id="sector9">
+            <div class="scroll-bar-padding">
+                <div class="font-helvetica-neue-scrollbar-number">08</div>
+                <div class="scroll-bar-center-text font-helvetica-neue-scrollbar-text">{% trans 'Прототип приложения' %}</div>
+            </div>
+        </div>
+    </div>
+    <div class="only-small-visible">
+        <div class="card-mobile">
+            <div class="sector-mobile" id="sector1-mobile">
+                <div class="scroll-bar-padding">
+                    <div class="font-helvetica-neue-scrollbar-number">01</div>
+                    <div class="scroll-bar-center-text font-helvetica-neue-scrollbar-text">{% trans 'Сбор информации и аналитика' %}</div>
+                </div>
+            </div>
+            <div class="sector-mobile">
+                <div class="scroll-bar-padding">
+                    <div class="font-helvetica-neue-scrollbar-number">02</div>
+                    <div class="scroll-bar-center-text font-helvetica-neue-scrollbar-text">{% trans 'Техническое задание' %}</div>
+                </div>
+            </div>
+            <div class="sector-mobile">
+                <div class="scroll-bar-padding">
+                    <div class="font-helvetica-neue-scrollbar-number">03</div>
+                    <div class="scroll-bar-center-text font-helvetica-neue-scrollbar-text">{% trans 'Прототип приложения' %}</div>
+                </div>
+            </div>
+            <div class="sector-mobile">
+                <div class="scroll-bar-padding">
+                    <div class="font-helvetica-neue-scrollbar-number">04</div>
+                    <div class="scroll-bar-center-text font-helvetica-neue-scrollbar-text">{% trans 'UX/UI дизайн интерфейса' %}</div>
+                </div>
+            </div>
+            <div class="sector-mobile">
+                <div class="scroll-bar-padding" style="position: absolute">
+                    <div class="font-helvetica-neue-scrollbar-number">05</div>
+                    <div class="scroll-bar-center-text font-helvetica-neue-scrollbar-text">{% trans 'Разработка' %}</div>
+                </div>
+                <video autoplay loop muted src="{% static 'video/blurry_video.mp4' %}" style="width: 100%; height: 100%; object-fit: cover;"></video>
+            </div>
+            <div class="sector-mobile">
+                <div class="scroll-bar-padding">
+                    <div class="font-helvetica-neue-scrollbar-number">06</div>
+                    <div class="scroll-bar-center-text font-helvetica-neue-scrollbar-text">{% trans 'Прототип приложения' %}</div>
+                </div>
+            </div>
+            <div class="sector-mobile">
+                <div class="scroll-bar-padding">
+                    <div class="font-helvetica-neue-scrollbar-number">07</div>
+                    <div class="scroll-bar-center-text font-helvetica-neue-scrollbar-text">{% trans 'Прототип приложения' %}</div>
+                </div>
+            </div>
+            <div class="sector-mobile">
+                <div class="scroll-bar-padding">
+                    <div class="font-helvetica-neue-scrollbar-number">08</div>
+                    <div class="scroll-bar-center-text font-helvetica-neue-scrollbar-text">{% trans 'Прототип приложения' %}</div>
+                </div>
+            </div>
+            <div class="sector-mobile" id="sector9-mobile">
+                <div class="scroll-bar-padding">
+                    <div class="font-helvetica-neue-scrollbar-number">09</div>
+                    <div class="scroll-bar-center-text font-helvetica-neue-scrollbar-text">{% trans 'Прототип приложения' %}</div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="div3" style="margin-top: 10%;">
+        <p class="font-helvetica-neue" style="color: white; white-space: nowrap;">{% trans 'С чего начать?' %}</p>
+        <img class="footer-vector" src="{% static 'images/vector-191-2.svg' %}" alt="bottom-vector" style="padding-left: 15%">
+    </div>
+    <div class="div3-footer">
+        <p class="font-helvetica-neue-25px-flex word-wrap" style="opacity: 70%;">{% trans 'Заполните бриф с описанием желаемого проекта. Мы сможем сразу дать ориентировочную оценку проекта по стоимости и срокам, если вы кратко опишете его основную идею и функции.' %}</p>
+        <div class="brief-form-button">
+            <p class="font-helvetica-neue-25px">{% trans 'Заполнить бриф' %}</p>
+        </div>
+        <div class="social-icons">
+            <div class="icon-border">
+                <a href="#"><img src="{% static 'images/whatsapp (2).png' %}" alt="whatsapp"></a>
+            </div>
+            <div class="icon-border" style="padding: 17px">
+                <a href="#"><img src="{% static 'images/telegram.png' %}" alt="telegram"></a>
+            </div>
+        </div>
+    </div>
+    <div class="div3-footer-mobile">
+        <p class="font-helvetica-neue-25px-flex word-wrap" style="opacity: 70%; margin-top: 5%; margin-bottom: 15%">{% trans 'Заполните бриф с описанием желаемого проекта. Мы сможем сразу дать ориентировочную оценку проекта по стоимости и срокам, если вы кратко опишете его основную идею и функции.' %}</p>
+        <div class="inline-block-mobile">
+            <div class="brief-form-button">
+                <a href="" class="font-helvetica-neue-25px-flex" style="width: auto; padding-bottom: 2em;">{% trans 'Заполнить бриф' %}</a>
+            </div>
+            <div class="social-icons">
+                <div class="icon-border" style="padding: 0.2em;">
+                    <a href="#"><img style="scale: 57%" src="{% static 'images/whatsapp (2).png' %}" alt="whatsapp"></a>
+                </div>
+                <div class="icon-border" style="padding: 0.3em">
+                    <a href="#"><img style="scale: 57%" src="{% static 'images/telegram.png' %}" alt="telegram"></a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="main-brief" id="brief">
+     <div class="left-fixed-div">
+         <div class="column-text-head">
+             <div class="text-head">
+                 <p class="font-helvetica-neue-78px">{% trans 'Заказ Дизайна' %}</p>
+             </div>
+             <div class="font-helvetica-neue-25px-tx">{% trans 'Каждую задачу мы решаем тщательно<br/>с креативным подходом.<br/><br/>Для начала сотрудничества необходимо обменяться информацией о вашем проекте и предоставить контактные данные. Мы свяжемся с вами для обсуждения всех деталей.' %}</div>
+         </div>
+         <div class="new-pr"><p class="font-helvetica-neue-25px">{% trans 'Новый проект' %}</p></div>
+         <div class="main-br">
+             <input type="checkbox" id="toggle1" class="toggle-input-br">
+             <label for="toggle1" class="toggle-label-br font-helvetica-neue-text-18px">{% trans 'Лендинг' %}</label>
+
+             <label for="toggle2"></label><input type="checkbox" id="toggle2" class="toggle-input-br">
+             <label for="toggle2" class="toggle-label2-br font-helvetica-neue-text-18px">{% trans 'Интернет-магазин' %}</label>
+
+             <label for="toggle3"></label><input type="checkbox" id="toggle3" class="toggle-input-br">
+             <label for="toggle3" class="toggle-label2-br font-helvetica-neue-text-18px">{% trans 'Веб-приложение' %}</label>
+         </div>
+         <div class="main-br">
+             <label for="toggle4"></label><input type="checkbox" id="toggle4" class="toggle-input-br">
+             <label for="toggle4" class="toggle-label-br font-helvetica-neue-text-18px">{% trans 'Мобильное приложение' %}</label>
+
+             <label for="toggle5"></label><input type="checkbox" id="toggle5" class="toggle-input-br">
+             <label for="toggle5" class="toggle-label2-br font-helvetica-neue-text-18px">{% trans 'UX / UI дизайн' %}</label>
+
+             <label for="toggle6"></label><input type="checkbox" id="toggle6" class="toggle-input-br">
+             <label for="toggle6" class="toggle-label2-br font-helvetica-neue-text-18px">{% trans 'Брендинг, создание лого' %}</label>
+         </div>
+         <div class="main-br">
+             <label for="toggle7"></label><label for="toggle7"></label><input type="checkbox" id="toggle7" class="toggle-input-br">
+             <label for="toggle7" class="toggle-label-br font-helvetica-neue-text-18px">{% trans 'Motion-дизайн' %}</label>
+
+             <label for="toggle8"></label><label for="toggle8"></label><input type="checkbox" id="toggle8" class="toggle-input-br">
+             <label for="toggle8" class="toggle-label2-br font-helvetica-neue-text-18px">{% trans 'SMM' %}</label>
+
+             <label for="toggle9"></label><label for="toggle9"></label><input type="checkbox" id="toggle9" class="toggle-input-br">
+             <label for="toggle9" class="toggle-label2-br font-helvetica-neue-text-18px">{% trans 'Таргетированная, Контекстная реклама' %}</label>
+         </div>
+     <div>
+         <div class="new-pr"><p class="font-helvetica-neue-25px">{% trans 'Новый проект' %}</p></div>
+         <label for="name1">{% trans 'Имя:' %}</label>
+         <input type="text" id="name1" placeholder="Название компании" class="input-style font-helvetica-neue-text-18px">
+     </div>
+         <div>
+             <div class="new-pr"><p class="font-helvetica-neue-25px">{% trans 'Описание проекта и примерный бюджет' %}</p></div>
+             <label for="name2">{% trans 'Имя:' %}</label>
+             <input type="text" id="name2" placeholder="Например: Сайты конкурентов" class="input-style font-helvetica-neue-text-18px">
+         </div>
+         <div>
+             <div class="new-pr"><p class="font-helvetica-neue-25px">{% trans 'Телефон' %}</p></div>
+             <label for="name3">{% trans 'Имя:' %}</label>
+             <input type="text" id="name3" placeholder="Или мессенджер" class="input-style font-helvetica-neue-text-18px">
+         </div>
+         <div>
+             <div class="new-pr"><p class="font-helvetica-neue-25px">{% trans 'Имя' %}</p></div>
+             <label for="name4">{% trans 'Имя:' %}</label>
+             <input type="text" id="name4" placeholder="Как к вам обращаться?" class="input-style font-helvetica-neue-text-18px">
+             <div style="margin-top: 50px; margin-left: 50px">
+                 <p class="zakaz-form-button font-helvetica-neue-25px">{% trans 'Отправить заявку' %}</p>
+             </div>
+         </div>
+     </div>
+    <div>
+        <video class="h-video-brief" loop muted autoplay src="{% static 'video/pexels_videos_2450251 (2160p).mp4' %}"></video>
+    </div>
+</div>
+
+    <div class="div2" style="margin-top: 0">
+        <p class="font-helvetica-neue">{% trans 'Частые вопросы' %}</p>
+    </div>
+    <div class="accordion-container" style="margin-right: 15%; margin-left: 15%; margin-bottom: 10%">
+        <div class="accordion">
+            <div class="accordion-header">
+                <p class="font-helvetica-neue-25px-flex word-wrap">{% trans 'Занимаетесь ли вы поддержкой проекта? Сколько это стоит?' %}</p>
+                <button class="accordion-toggle">
+                    <img class="icon" src="{% static 'images/vector-194-2.svg' %}" alt="">
+                </button>
+            </div>
+            <div class="accordion-content">
+                <div class="content-inner tx-white font-helvetica-neue-25px-flex">
+                    <p class="word-wrap">{% trans 'Мы предоставляем гарантию на свои работы, по истечении ее срока мы можем заключить с вами договор на техническую поддержку. Он будет включать в себя определенное количество часов в месяц по установленной абонентской плате (здесь мы с вами обсудим все индивидуально). В рамках этих часов можно поддерживать актуальность и стабильность работы приложения или проводить доработки по функционалу.' %}</p>
+                </div>
+            </div>
+        </div>
+        <div class="accordion">
+            <div class="accordion-header">
+                <p class="font-helvetica-neue-25px-flex word-wrap">{% trans 'Беретесь ли вы за доработку приложений?' %}</p>
+                <button class="accordion-toggle">
+                    <img class="icon" src="{% static 'images/vector-194-2.svg' %}" alt="">
+                </button>
+            </div>
+            <div class="accordion-content">
+                <div class="content-inner tx-white font-helvetica-neue-25px-flex">
+                    <p class="word-wrap">{% trans 'Мы берем проекты на доработку. Перед ознакомлением с исходным кодом проекта подписываем NDA. Далее осуществляем ревью приложений и даем рекомендации по их улучшению. Формат работы может быть как Time & Materials (оплата за фактически затраченное на задачи время), так и Retainer (стоимость работы команды или отдельных специалистов за месяц) или FixPrice (зафиксированная стоимость всего проекта).' %}</p>
+                </div>
+            </div>
+        </div>
+        <div class="accordion">
+            <div class="accordion-header">
+                <p class="font-helvetica-neue-25px-flex word-wrap">{% trans 'У вас нет проектов, похожих на мой, а вы точно справитесь?' %}</p>
+                <button class="accordion-toggle">
+                    <img class="icon" src="{% static 'images/vector-194-2.svg' %}" alt="">
+                </button>
+            </div>
+            <div class="accordion-content">
+                <div class="content-inner tx-white font-helvetica-neue-25px-flex">
+                    <p class="word-wrap">{% trans 'Если вы не увидели в нашем портфолио проекта, аналогичного вашему, возможно, просто с подобной идеей к нам еще не обращались, либо мы не можем публиковать кейс на сайте ввиду ограничений по конфиденциальности. Однако уникальных приложений на рынке существует очень много, и они обычно обладают стандартным функционалом: авторизация, подписки, каталог, личный кабинет, навигация, платежные системы и др. Наверняка необходимые вам элементы уже реализованы нашей студией в других проектах. Мы подробно обсудим с вами детали вашей идеи и предложим варианты реализации, исходя из накопленной продуктовой экспертизы.' %}</p>
+                </div>
+            </div>
+        </div>
+        <div class="accordion">
+            <div class="accordion-header">
+                <p class="font-helvetica-neue-25px-flex word-wrap">{% trans 'Передаете ли вы права на приложение?' %}</p>
+                <button class="accordion-toggle">
+                    <img class="icon" src="{% static 'images/vector-194-2.svg' %}" alt="">
+                </button>
+            </div>
+            <div class="accordion-content">
+                <div class="content-inner tx-white font-helvetica-neue-25px-flex">
+                    <p class="word-wrap">{% trans 'Да, мы прописываем в договоре информацию о том, что заказчик получает все права свой продукт, а с нашей стороны они наоборот отчуждаются.' %}</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="bottom-line">
+        <img class="bottom-vector-footer" src="{% static 'images/vector-192-1.svg' %}" alt="">
+    </div>
+    <div class="footer">
+        <div>
+            <a href="{% url 'homepage' %}" class="font-neue-machina" style="font-size: 44px; color: #1400FF;">Dala<br>Digital</a>
+            <p class="font-inter" style="font-size: 20px; opacity: 70%; width: 160px; white-space: normal;">{% trans 'Студия создания цифровых продуктов полного цикла' %}</p>
+        </div>
+        <div>
+            <div class="bottom-links">
+                <a class="font-inter" href="{% url 'portfolio' %}">{% trans 'Портфолио' %}</a>
+                <a class="font-inter bottom-links-padding" href="{% url 'services' %}">{% trans 'Услуги' %}</a>
+                <a class="font-inter bottom-links-padding" href="#">{% trans 'Контакты' %}</a>
+            </div>
+        </div>
+        <div>
+            <p class="font-inter">{% trans 'Написать нам:' %}</p>
+            <div class="social-icons">
+                <div class="icon-border">
+                    <a href="#"><img src="{% static 'images/whatsapp (2).png' %}" alt=""></a>
+                </div>
+                <div class="icon-border" style="padding: 17px">
+                    <a href="#"><img src="{% static 'images/telegram.png' %}" alt=""></a>
+                </div>
+            </div>
+        </div>
+        <div class="bottom-lang">
+            <div class="language-switcher">
+                <a class="font-neue-machina" href="{% url 'set_language_en' %}" style="margin-right: 20px;">en</a>
+                <a class="font-neue-machina" href="{% url 'set_language_ru' %}" style="color: #1400FF;">ru</a>
+            </div>
+            <div>
+                <p class="bottom-phone-number">+7 707 997 7729</p>
+            </div>
+        </div>
+    </div>
+    <div class="footer-mobile">
+        <div class="inline-block-mobile footer-div">
+            <div>
+                <div class="bottom-links">
+                    <a class="font-inter-flex" style="font-size: 0.9em" href="{% url 'portfolio' %}">{% trans 'Портфолио' %}</a>
+                    <a class="font-inter-flex bottom-links-padding" style="font-size: 0.9em" href="{% url 'services' %}">{% trans 'Услуги' %}</a>
+                    <a class="font-inter-flex bottom-links-padding" style="font-size: 0.9em" href="#">{% trans 'Контакты' %}</a>
+                </div>
+            </div>
+            <div class="bottom-lang" style="margin-left: 6em;">
+                <div class="language-switcher-bottom">
+                    <a class="font-neue-machina" href="{% url 'set_language_en' %}" style="margin-right: 20px; font-size: 1em;">en</a>
+                    <a class="font-neue-machina" href="{% url 'set_language_ru' %}" style="color: #1400FF; font-size: 1em;">ru</a>
+                </div>
+                <div>
+                    <p class="bottom-phone-number">+7 707 997 7729</p>
+                </div>
+            </div>
+        </div>
+        <div class="inline-block-mobile footer-div">
+            <div>
+                <a href="{% url 'homepage' %}" class="font-neue-machina" style="font-size: 1.5em; color: #1400FF;">Dala<br>Digital</a>
+                <p class="font-inter-flex" style="font-size: 0.8em; opacity: 70%; width: 10em; white-space: normal;">{% trans 'Студия создания цифровых продуктов полного цикла' %}</p>
+            </div>
+            <div style="margin-left: 0; margin-top: 1em;">
+                <p class="font-inter-flex" style="font-size: 0.9em; margin-left: 2.2em;">{% trans 'Написать нам:' %}</p>
+                <div class="social-icons" style="margin-top: 2em;">
+                    <div class="icon-border" style="padding: 0.2em;">
+                        <a href="#"><img class="bottom-icon" src="{% static 'images/whatsapp (2).png' %}" alt=""></a>
+                    </div>
+                    <div class="icon-border" style="padding: 0.3em">
+                        <a href="#"><img class="bottom-icon" src="{% static 'images/telegram.png' %}" alt=""></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<script src="{% static 'scripts/videoToggle.js' %}"></script>
+<script src="{% static 'scripts/accordion.js' %}"></script>
+<script src="{% static 'scripts/slider.js' %}"></script>
+<script src="{% static 'scripts/http_unpkg.com_swiper_swiper-bundle.js' %}"></script>
+<script src="{% static 'scripts/adaptiveImage.js' %}"></script>
+<script src="{% static 'scripts/menu.js' %}"></script>
+<script src="{% static 'scripts/briefCancel.js' %}"></script>
+</body>
+</html>
