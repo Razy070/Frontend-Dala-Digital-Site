@@ -27,7 +27,7 @@ a {
 .h-video {
     width: 100%;
     height: auto;
-    position: fixed;
+
 
 
 }
@@ -162,4 +162,5 @@ a {
     display: inline-flex;
     width: 268px;
     height: 76px;
+    margin-left: 30px;
 }

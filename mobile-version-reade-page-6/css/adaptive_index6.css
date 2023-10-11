@@ -187,7 +187,7 @@
 
     .head-text {
         margin-top: 80px;
-        margin-left: 30px;
+        margin-left: 10px;
 
         font-family: "Helvetica Neue", sans-serif;
         font-weight: 500;
@@ -241,7 +241,7 @@
 
 
     .card-new-top {
-        width: 80%;
+        width: 100%;
         margin-left: 0;
         margin-right: 0;
         /*position: absolute;*/
@@ -255,8 +255,8 @@
     .scroll-bar-div1 {
         border-radius: 20px;
         border: 1px solid #63605e;
-        width: 432px;
-        height: 2300px;
+        width: 100%;
+        height: auto;
 
     }
 
@@ -268,7 +268,7 @@
         background: rgba(255, 255, 255, 0.09); /* Убираем цвет фона слайдов */
         border-radius: 20px;
         /* Установите высоту слайдов равной .scroll-bar-div */
-        height: 2300px; /* Устанавливаем такую же высоту, как у .scroll-bar-div */
+        height: auto; /* Устанавливаем такую же высоту, как у .scroll-bar-div */
         margin-left: 0;
         margin-top: 100px;
 
@@ -276,20 +276,24 @@
 
     .big-text-main {
         color: white;
-        font-size: 20px;
+        font-size: 0.9em;
         font-family: Helvetica Neue, sans-serif;
         font-weight: 500;
         line-height: 52px;
-        word-wrap: break-word;
-        margin-left: 30px;
-        margin-top: 60px;
+
+
+
+        white-space: normal;
+        margin-left: 0;
+        margin-top: 0;
+        padding: 1em;
 
     }
 
     .small-text-body1 {
 
-        margin-top: 13px;
-        margin-left: 36px;
+        margin-top: 0;
+        margin-left: 0;
         width: 322px;
         height: 24px;
         padding: 1em;
@@ -687,13 +691,59 @@
     }
     .menu-mobile-container {
         font-size: 0.9em;
-        position: absolute;
         flex-direction: column;
-        margin-left: 20em;
-        margin-top: 7em;
+        text-align: center;
     }
     .menu-mobile {
-        margin-top: 1em;
+        margin-top: 0.5em;
+    }
+
+
+
+    .new-top-card {
+        margin-left: 0;
+        width: 100%;
+        height: auto;
+        border: 1px solid #63605e;
+        border-radius: 10px;
+        margin-top: 30%;
+        background: rgba(255, 255, 255, 0.09); /* Убираем цвет фона слайдов */
+
+    }
+
+    .date-text {
+        font-size: 0.9em;
+        opacity: 70%;
+    }
+
+    .card-text {
+        font-family: "Helvetica Neue", sans-serif;
+        font-weight: 500;
+        margin-left: 0;
+        margin-right: 0;
+        font-size: 0.9em;
+
+        width: auto;
+        white-space: normal
+    }
+
+    .card-photo {
+        width: 100%;
+        height: auto;
+    }
+
+    .card-padding {
+        padding: 1em;
+    }
+
+
+    .card-text-head {
+        font-family: "Helvetica Neue", sans-serif;
+        font-weight: 500;
+        font-size: 20px;
+
+        width: 100%;
+        white-space: normal
     }
 
 }
