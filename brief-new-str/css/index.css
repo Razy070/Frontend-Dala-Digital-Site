@@ -17,7 +17,6 @@ a {
     margin: 0 auto; /* Это выровняет элемент по центру по горизонтали */
     position: relative; /* Это позволит вам использовать top: 0 для позиционирования по вертикали */
     top: 0;
-    display: inline-block;
 }
 
 .video {
@@ -25,11 +24,9 @@ a {
 }
 
 .h-video {
-    width: 100%;
-    height: auto;
-
-
-
+    position: fixed;
+    width: auto;
+    height: 1080px;
 }
 
 
@@ -153,6 +150,7 @@ a {
 
 
 .zakaz-form-button {
+    margin-bottom: 50px;
     background: #1400FF;
     border-radius: 10px;
     overflow: hidden;
